@@ -13,6 +13,8 @@ public class GuessWord
         
     }
     
+    
+    
     //check if the player has won
     private boolean checkWin()
     {
@@ -33,6 +35,11 @@ public class GuessWord
         
         for(char character : charArray)
         {
+            if(character == ' ' || character == '-')
+            {
+                secretWord.put((Character) char vbvvacter, new Boolean(false));
+            }
+            
             secretWord.put((Character) character, new Boolean(false));
         }
         
