@@ -11,12 +11,15 @@ public class TitleScreen extends World {
         addObject(startButton, 300, 340);
 
         Button musicButton = new MusicButton(this::changeVolume);
-        addObject(musicButton, 50, 50);
+        addObject(musicButton, 550, 350);
 
         // Button starButton = new StarButton(this::goHighScore);
         // addObject(starButton, 50, 50);
     }
 
+    public void changeVolume() {
+        
+    }
 
     public void goGameScreen() {
         Greenfoot.setWorld(new MyWorld());
