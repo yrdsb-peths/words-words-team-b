@@ -12,7 +12,19 @@ public class GuessWord
     {
         
     }
+    
+    //check if the player has won
+    private boolean checkWin()
+    {
+        for(Character key : secretWord.keySet())
+        {
+            if(secretWord.get(key).booleanValue() == false) return false; 
+        }
+        
+        return true;
+    }
 
+    //convert word into a map
     private HashMap<Character, Boolean> createMap(String word)
     {
         HashMap<Character, Boolean> secretWord = new HashMap<Character, Boolean>();
