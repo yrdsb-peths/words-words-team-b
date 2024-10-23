@@ -1,6 +1,9 @@
 import greenfoot.*;
 
 public class TitleScreen extends World {
+   
+    Button musicButton;
+
     public TitleScreen() {
         super(600, 400, 1);
 
@@ -10,7 +13,7 @@ public class TitleScreen extends World {
         Button startButton = new StartButton(this::goGameScreen);
         addObject(startButton, 300, 340);
 
-        Button musicButton = new MusicButton(this::changeVolume);
+        musicButton = new MusicButton(this::changeVolume);
         addObject(musicButton, 550, 350);
 
         // Button starButton = new StarButton(this::goHighScore);
@@ -18,7 +21,7 @@ public class TitleScreen extends World {
     }
 
     public void changeVolume() {
-        
+        ((MusicButton) musicButton).setButton(); 
     }
 
     public void goGameScreen() {
