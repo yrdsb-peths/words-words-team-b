@@ -1,4 +1,5 @@
 import greenfoot.*;
+import java.util.*;
 
 public class MyWorld extends World {
     private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
@@ -13,18 +14,14 @@ public class MyWorld extends World {
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
     {
-        HashMap<Character, Boolean> secretWord = new HashMap<Character, Boolean>();
+        HashMap<Character, Letter> secretWord = new HashMap<Character, Letter>();
         
-        char[] charArray = word.toCharArray();
+        char[] charArray = ALPHABET.toCharArray();
         
-        for(char character : charArray)
+        for(char letter : charArray)
         {
-            if(character == ' ' || character == '-')
-            {
-                /secretWord.put((Character), char new Boolean(false));
-            }
-            
-            secretWord.put((Character) character, new Boolean(false));
+            //change the position latter
+            secretWord.put((Character) character, new Letter(letter, 300, 200));
         }
         
         return secretWord;
