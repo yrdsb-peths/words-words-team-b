@@ -25,7 +25,7 @@ public class TitleScreen extends World {
     }
 
     public void goGameScreen() {
-        Greenfoot.setWorld(new MyWorld());
+        Greenfoot.setWorld(new GameWorld());
     }
 
 
