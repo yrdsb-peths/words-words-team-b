@@ -23,5 +23,17 @@ public class Letter extends Actor
         world.addObject(letterLabel, xPos, yPos);
     }
 
-   
+     public void guess()
+    {
+        isGuess = true;
+        
+        crossLetter();
+    }
+    
+    public void crossLetter()
+    {
+        Label crossLabel = new Label("/", 10);
+        world.addObject(crossLabel, xPos, yPos);
+    }
+    
 }
