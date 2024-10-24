@@ -11,10 +11,14 @@ public class GameWorld extends World {
         // Load a random word for the game
         trueWord = WordLoader.getRandomWord(WordLoader.loadWords("word-lists/nouns.txt")).toCharArray();
 
-        // Fill the current word with underscores
+        // Fill the current word with underscores, check if space or dash, if so, display it
         currentWord = new char[trueWord.length];
         for (int i = 0; i < currentWord.length; i++) {
-            currentWord[i] = '_';
+            if (trueWord[i] == ' ' || trueWord[i] == '-') {
+                currentWord[i] = trueWord[i];
+            } else {
+                currentWord[i] = '_';
+            }
         }
 
         // Create a label to display the word, and add it to the world
