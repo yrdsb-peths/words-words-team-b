@@ -21,9 +21,17 @@ public class GameWorld extends World {
         wordLabel = new Label(String.valueOf(currentWord), 60);
         wordLabel.setFillColor(Color.BLACK);
         addObject(wordLabel, getWidth() / 2, 100);
+
+        updateWordLabel(currentWord);
     }
 
     private void updateWordLabel(char[] word) {
-        wordLabel.setValue(String.valueOf(word));
+        // Add a space between each character in the word for spacing
+        String wordString = "";
+        for (int i = 0; i < word.length; i++) {
+            wordString += word[i] + " ";
+        }
+
+        wordLabel.setValue(wordString);
     }
 }
