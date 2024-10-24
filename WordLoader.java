@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WordLoader {
-    public List<String> loadWords(String path) {
+    public static List<String> loadWords(String path) {
         // Create a list to store the words
         List<String> words = new ArrayList<>();
         
@@ -33,7 +33,7 @@ public class WordLoader {
         return words;
     }
 
-    public String getRandomWord(List<String> words) {
+    public static String getRandomWord(List<String> words) {
         // Grabs a random word from the given list of words
         int index = (int) (Math.random() * words.size());
         return words.get(index);
