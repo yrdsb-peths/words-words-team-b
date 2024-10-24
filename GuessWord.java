@@ -37,7 +37,7 @@ public class GuessWord
         {
             if(character == ' ' || character == '-')
             {
-                secretWord.put((Character) char vbvvacter, new Boolean(false));
+                secretWord.put((Character) char new Boolean(false));
             }
             
             secretWord.put((Character) character, new Boolean(false));
