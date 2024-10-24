@@ -36,4 +36,8 @@ public class Letter extends Actor
         world.addObject(crossLabel, xPos, yPos);
     }
     
+    public boolean getIsGuess()
+    {
+        return isGuess;
+    }
 }
