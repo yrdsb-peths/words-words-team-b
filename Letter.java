@@ -23,16 +23,16 @@ public class Letter extends Actor
         letterLabel = new Label(Character.toString(letter), size);
     }
 
-    public void addToWorld(World world)
+    public void addedToWorld(World world)
     {
         world.addObject(letterLabel, xPos, yPos);
     }
 
     public void guess()
     {
-        guessed = true;
+        if (!guessed) crossLetter();
         
-        crossLetter();
+        guessed = true;
     }
     
     public void crossLetter()

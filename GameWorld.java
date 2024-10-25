@@ -53,6 +53,8 @@ public class GameWorld extends World {
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
         if (letter != null && letter.length() == 1) {
+            alphabetMap.get(letter.charAt(0)).guess();
+            
             // Check if the letter is in the word
             boolean letterInWord = false;
             for (int i = 0; i < trueWord.length; i++) {
@@ -60,7 +62,6 @@ public class GameWorld extends World {
                     currentWord[i] = trueWord[i];
                     letterInWord = true;
                     
-                    alphabetMap.get(trueWord[i]).guess();
                 }
             }
 
@@ -91,7 +92,7 @@ public class GameWorld extends World {
             Letter letterObj = new Letter(letter, xPos, yPos);
             alphabet.put((Character) letter, letterObj);
             
-            letterObj.addToWorld(this);
+            addObject(letterObj, xPos, yPos);
             
             counter++;
             
