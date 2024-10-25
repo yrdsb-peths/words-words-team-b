@@ -35,6 +35,11 @@ public class GameWorld extends World {
         alphabetMap = createMap(ALPHABET);
     }
 
+    public void act() {
+        // Get keypresses and interpret it
+        handleUserInput(Greenfoot.getKey());
+    }
+
     private void updateWordLabel(char[] word) {
         // Add a space between each character in the word for spacing
         String wordString = "";
@@ -44,6 +49,27 @@ public class GameWorld extends World {
 
         wordLabel.setValue(wordString);
     }
+
+    private void handleUserInput(String letter) {
+        // Null check (no key pressed) and length check (keys like escape, shift, etc.)
+        if (letter != null && letter.length() == 1) {
+            // Check if the letter is in the word
+            boolean letterInWord = false;
+            for (int i = 0; i < trueWord.length; i++) {
+                if (trueWord[i] == letter.charAt(0)) {
+                    currentWord[i] = trueWord[i];
+                    letterInWord = true;
+                }
+            }
+
+            // Update the word label
+            updateWordLabel(currentWord);
+
+            // If the letter is not in the word
+            if (!letterInWord) {
+                // TODO handle incorrect guesses
+            }
+        }
 
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
@@ -59,5 +85,6 @@ public class GameWorld extends World {
         }
         
         return alphabet;
+
     }
 }
