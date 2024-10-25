@@ -9,7 +9,7 @@ public class Letter extends Actor
     private int xPos;
     private int yPos;
     
-    private MyWorld world = (MyWorld) getWorld();
+    private GameWorld world = (GameWorld) getWorld();
 
     /**
      * Constructor for objects of class Letter

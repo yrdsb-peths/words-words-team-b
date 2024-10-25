@@ -1,6 +1,10 @@
 import greenfoot.*;
+import java.util.*;
 
 public class GameWorld extends World {
+    private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+    HashMap<Character, Letter> alphabetMap = new HashMap<Character, Letter>();
+
     private char[] trueWord;
     private char[] currentWord;
     private Label wordLabel;
@@ -27,6 +31,13 @@ public class GameWorld extends World {
         addObject(wordLabel, getWidth() / 2, 100);
 
         updateWordLabel(currentWord);
+
+        alphabetMap = createMap(ALPHABET);
+    }
+
+    public void act() {
+        // Get keypresses and interpret it
+        handleUserInput(Greenfoot.getKey());
     }
 
     private void updateWordLabel(char[] word) {
@@ -37,5 +48,43 @@ public class GameWorld extends World {
         }
 
         wordLabel.setValue(wordString);
+    }
+
+    private void handleUserInput(String letter) {
+        // Null check (no key pressed) and length check (keys like escape, shift, etc.)
+        if (letter != null && letter.length() == 1) {
+            // Check if the letter is in the word
+            boolean letterInWord = false;
+            for (int i = 0; i < trueWord.length; i++) {
+                if (trueWord[i] == letter.charAt(0)) {
+                    currentWord[i] = trueWord[i];
+                    letterInWord = true;
+                }
+            }
+
+            // Update the word label
+            updateWordLabel(currentWord);
+
+            // If the letter is not in the word
+            if (!letterInWord) {
+                // TODO handle incorrect guesses
+            }
+        }
+
+    //map the alphabet 
+    private HashMap<Character, Letter> createMap(String word)
+    {
+        HashMap<Character, Letter> alphabet = new HashMap<Character, Letter>();
+        
+        char[] charArray = ALPHABET.toCharArray();
+        
+        for(char letter : charArray)
+        {
+            //change the position latter
+            alphabet.put((Character) letter, new Letter(letter, 300, 200));
+        }
+        
+        return alphabet;
+
     }
 }
