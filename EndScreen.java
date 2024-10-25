@@ -2,13 +2,6 @@ import greenfoot.World;
 import greenfoot.Color;
 
 public class EndScreen extends World{
-    /**
-     * Check if user lost or won, then display correct text
-     * If possible, create a function that restarts the game?
-     */
-
-    // boolean isWin = true;
-
     Label titleLabel; 
     
     public EndScreen() 
@@ -16,11 +9,17 @@ public class EndScreen extends World{
         super(600, 400, 1);
 
         setBackground("images/black-background.jpg");
+        // if win
         titleLabel = new Label("YOU WON!", 60);
+        fireworks();
+        // else if lost
+        // titleLabel = new Label("YOU LOST", 60);
+        
+        
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
         
         fontColor();
-        prepare();
+        
     }
     
     public void act()
@@ -36,11 +35,11 @@ public class EndScreen extends World{
         
     }
     
-    private void prepare()
+    private void fireworks()
     {
         Fireworks f1 = new Fireworks();
         Fireworks f2 = new Fireworks();
-        addObject(f1, 100, 100);
-        addObject(f2, 500, 100);
+        addObject(f1, 100, 150);
+        addObject(f2, 500, 150);
     }
 }
