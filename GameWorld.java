@@ -70,6 +70,7 @@ public class GameWorld extends World {
                 // TODO handle incorrect guesses
             }
         }
+    }
 
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
