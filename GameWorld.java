@@ -59,6 +59,8 @@ public class GameWorld extends World {
                 if (trueWord[i] == letter.charAt(0)) {
                     currentWord[i] = trueWord[i];
                     letterInWord = true;
+                    
+                    alphabetMap.get(trueWord[i]).guess();
                 }
             }
 
@@ -79,10 +81,27 @@ public class GameWorld extends World {
         
         char[] charArray = ALPHABET.toCharArray();
         
+        int xPos = 100;
+        int yPos = 200;
+        int counter = 0;
+        
         for(char letter : charArray)
         {
             //change the position latter
-            alphabet.put((Character) letter, new Letter(letter, 300, 200));
+            Letter letterObj = new Letter(letter, xPos, yPos);
+            alphabet.put((Character) letter, letterObj);
+            
+            letterObj.addToWorld(this);
+            
+            counter++;
+            
+            if(counter % 6 == 0)
+            {
+                yPos += 50;
+                xPos = 50;
+            }
+            
+            xPos += 50;
         }
         
         return alphabet;
