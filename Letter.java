@@ -9,7 +9,7 @@ public class Letter extends Actor
     private int xPos;
     private int yPos;
     
-    private GameWorld world = (GameWorld) getWorld();
+    private Label letterLabel;
 
     /**
      * Constructor for objects of class Letter
@@ -20,7 +20,11 @@ public class Letter extends Actor
         xPos = theXPos;
         yPos = theYPos;
         
-        Label letterLabel = new Label(letter, size);
+        letterLabel = new Label(letter, size);
+    }
+
+    public void addedToWorld(World world)
+    {
         world.addObject(letterLabel, xPos, yPos);
     }
 
@@ -33,8 +37,8 @@ public class Letter extends Actor
     
     public void crossLetter()
     {
-        Label crossLabel = new Label("/", 10);
-        world.addObject(crossLabel, xPos, yPos);
+        Label crossLabel = new Label("/", size);
+        getWorld().addObject(crossLabel, xPos, yPos);
     }
     
     public boolean isGuessed()
