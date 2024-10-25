@@ -1,6 +1,10 @@
 import greenfoot.*;
+import java.util.*;
 
 public class GameWorld extends World {
+    private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+    HashMap<Character, Letter> alphabetMap = new HashMap<Character, Letter>();
+
     private char[] trueWord;
     private char[] currentWord;
     private Label wordLabel;
@@ -27,6 +31,8 @@ public class GameWorld extends World {
         addObject(wordLabel, getWidth() / 2, 100);
 
         updateWordLabel(currentWord);
+
+        alphabetMap = createMap(ALPHABET);
     }
 
     public void act() {
@@ -64,5 +70,21 @@ public class GameWorld extends World {
                 // TODO handle incorrect guesses
             }
         }
+
+    //map the alphabet 
+    private HashMap<Character, Letter> createMap(String word)
+    {
+        HashMap<Character, Letter> alphabet = new HashMap<Character, Letter>();
+        
+        char[] charArray = ALPHABET.toCharArray();
+        
+        for(char letter : charArray)
+        {
+            //change the position latter
+            alphabet.put((Character) letter, new Letter(letter, 300, 200));
+        }
+        
+        return alphabet;
+
     }
 }
