@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Letter extends Actor
 {
     private char letter;
-    private boolean isGuess = false;
+    private boolean guessed = false;
     private int size = 10;
     
     private int xPos;
@@ -20,13 +20,13 @@ public class Letter extends Actor
         xPos = theXPos;
         yPos = theYPos;
         
-        Label letterLabel = new Label(letter, 10);
+        Label letterLabel = new Label(letter, size);
         world.addObject(letterLabel, xPos, yPos);
     }
 
-     public void guess()
+    public void guess()
     {
-        isGuess = true;
+        guessed = true;
         
         crossLetter();
     }
@@ -37,8 +37,8 @@ public class Letter extends Actor
         world.addObject(crossLabel, xPos, yPos);
     }
     
-    public boolean getIsGuess()
+    public boolean isGuessed()
     {
-        return isGuess;
+        return guessed;
     }
 }
