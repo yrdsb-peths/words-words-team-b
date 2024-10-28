@@ -1,0 +1,912 @@
+quizzical, Emotion/Expression
+highfalutin, Style/Behavior
+dynamic, Characteristic
+wakeful, State
+cheerful, Emotion
+thoughtful, Personality Trait
+cooperative, Personality Trait
+questionable, Quality
+abundant, Quantity
+uneven, Physical Property
+yummy, Taste
+juicy, Physical Property
+vacuous, Personality Trait
+concerned, Emotion
+young, Age
+sparkling, Appearance
+abhorrent, Emotion
+sweltering, Weather
+late, Time
+macho, Personality Trait
+scrawny, Physical Appearance
+friendly, Personality Trait
+kaput, State
+divergent, Characteristic
+busy, State
+charming, Personality Trait
+protective, Personality Trait
+premium, Quality
+puzzled, Emotion
+waggish, Personality Trait
+rambunctious, Behavior
+puffy, Physical Appearance
+hard, Quality
+fat, Physical Property
+sedate, Behavior
+yellow, Color
+resonant, Sound
+dapper, Appearance
+courageous, Personality Trait
+vast, Size
+cool, Temperature/Style
+elated, Emotion
+wary, Emotion
+bewildered, Emotion
+level, Quality
+wooden, Material
+ceaseless, Quality
+tearful, Emotion
+cloudy, Weather
+gullible, Personality Trait
+flashy, Appearance
+trite, Quality
+quick, Speed
+nondescript, Appearance
+round, Shape
+slow, Speed
+spiritual, Characteristic
+brave, Personality Trait
+tenuous, Quality
+abstracted, State
+colossal, Size
+sloppy, Appearance
+obsolete, State
+elegant, Appearance
+fabulous, Quality
+vivacious, Personality Trait
+exuberant, Emotion
+faithful, Personality Trait
+helpless, State
+odd, Quality
+sordid, Quality
+blue, Color/Emotion
+imported, Origin
+ugly, Appearance
+ruthless, Personality Trait
+deeply, Intensity
+eminent, Status
+reminiscent, State
+rotten, Quality
+sour, Taste
+volatile, Characteristic
+succinct, Quality
+judicious, Personality Trait
+abrupt, Quality
+learned, State
+stereotyped, Quality
+evanescent, Quality
+efficacious, Effectiveness
+festive, Occasion
+loose, State
+torpid, State
+condemned, State
+selective, Characteristic
+strong, Strength
+momentous, Importance
+ordinary, Quality
+dry, Texture
+great, Size/Quality
+ultra, Intensity
+ahead, Position
+broken, State
+dusty, Appearance
+piquant, Taste
+creepy, Emotion/Appearance
+miniature, Size
+periodic, Frequency
+equable, Temperament
+unsightly, Appearance
+narrow, Size
+grieving, Emotion
+whimsical, Personality Trait
+fantastic, Quality
+kindhearted, Personality Trait
+miscreant, Character
+cowardly, Personality Trait
+cloistered, State
+marked, Appearance
+bloody, Appearance
+chunky, Physical Property
+undesirable, Quality
+oval, Shape
+nauseating, Emotion/Taste
+aberrant, Quality
+stingy, Personality Trait
+standing, Position
+distinct, Quality
+illegal, Legal Status
+angry, Emotion
+faint, Intensity
+rustic, Style
+few, Quantity
+calm, Emotion/State
+gorgeous, Appearance
+mysterious, Characteristic
+tacky, Appearance
+unadvised, Quality
+greasy, Texture
+minor, Size/Importance
+loving, Emotion/Personality Trait
+melodic, Sound
+flat, Shape/Quality
+wretched, Emotion/Condition
+clever, Personality Trait
+barbarous, Behavior
+pretty, Appearance
+endurable, Quality
+handsomely, Appearance
+unequaled, Quality
+acceptable, Quality
+symptomatic, Characteristic
+hurt, Emotion/State
+tested, State
+long, Length
+warm, Temperature
+ignorant, Knowledge
+ashamed, Emotion
+excellent, Quality
+known, State
+adamant, Personality Trait
+eatable, Quality
+verdant, Color/Appearance
+meek, Personality Trait
+unbiased, Characteristic
+rampant, Behavior
+somber, Emotion/Appearance
+cuddly, Appearance/Quality
+harmonious, Sound/Quality
+salty, Taste
+overwrought, Emotion/State
+stimulating, Effect
+beautiful, Appearance
+crazy, Emotion/State
+grouchy, Personality Trait
+thirsty, State
+joyous, Emotion
+confused, Emotion/State
+terrible, Quality
+high, Height/Intensity
+unarmed, State
+gabby, Personality Trait
+wet, State
+sharp, Quality
+wonderful, Quality
+magenta, Color
+tan, Color
+huge, Size
+productive, Characteristic
+defective, Quality
+chilly, Temperature
+needy, State
+imminent, Time
+flaky, Texture/Behavior
+fortunate, Emotion/State
+neighborly, Personality Trait
+hot, Temperature
+husky, Sound/Appearance
+optimal, Quality
+gaping, Appearance
+faulty, Quality
+guttural, Sound
+massive, Size
+watery, Appearance
+abrasive, Texture/Quality
+ubiquitous, Characteristic
+aspiring, Personality Trait
+impartial, Characteristic
+annoyed, Emotion
+billowy, Appearance
+lucky, State
+panoramic, Appearance
+heartbreaking, Emotion
+fragile, Quality
+purring, Sound
+wistful, Emotion
+burly, Physical Appearance
+filthy, Appearance
+psychedelic, Style
+harsh, Quality
+disagreeable, Personality Trait
+ambiguous, Quality
+short, Length
+splendid, Quality
+crowded, State
+light, Weight/Color
+yielding, Behavior/Quality
+hypnotic, Effect
+dispensable, Quality
+deserted, State
+nonchalant, Personality Trait
+green, Color
+puny, Size
+deafening, Sound
+classy, Style
+tall, Height
+typical, Characteristic
+exclusive, Quality
+materialistic, Personality Trait
+mute, State
+shaky, State
+inconclusive, Quality
+rebellious, Personality Trait
+doubtful, Emotion/State
+telling, Effect
+unsuitable, Quality
+woebegone, Emotion
+cold, Temperature/Emotion
+sassy, Personality Trait
+arrogant, Personality Trait
+perfect, Quality
+adhesive, Function
+industrious, Personality Trait
+crabby, Personality Trait
+curly, Appearance
+voiceless, State
+nostalgic, Emotion
+better, Comparative Quality
+slippery, Texture
+willing, State
+nifty, Quality
+orange, Color
+victorious, State
+ritzy, Style
+wacky, Personality Trait
+vigorous, Energy Level
+spotless, Appearance
+good, Quality
+powerful, Strength
+bashful, Personality Trait
+soggy, Texture
+grubby, Appearance
+moaning, Sound/Emotion
+placid, State/Emotion
+permissible, Legal Status
+half, Quantity
+towering, Height
+bawdy, Content
+measly, Quality
+abaft, Position
+delightful, Emotion/Quality
+goofy, Personality Trait
+capricious, Personality Trait
+nonstop, Frequency
+addicted, State
+acoustic, Sound
+furtive, Behavior
+erratic, Behavior
+heavy, Weight
+square, Shape
+delicious, Taste
+needless, Quality
+resolute, Personality Trait
+innocent, State/Personality Trait
+abnormal, Quality
+hurried, State
+awful, Quality
+impossible, Possibility
+aloof, Personality Trait
+giddy, Emotion/State
+large, Size
+pointless, Quality
+petite, Size
+jolly, Emotion
+boundless, Size
+abounding, Quantity
+hilarious, Emotion
+heavenly, Quality
+honorable, Personality Trait
+squeamish, Personality Trait
+red, Color
+phobic, State
+trashy, Quality
+pathetic, Quality
+parched, State
+godly, Character Trait
+greedy, Personality Trait
+pleasant, Emotion/Quality
+small, Size
+aboriginal, Origin
+dashing, Appearance/Behavior
+icky, Quality
+bumpy, Texture
+laughable, Quality
+hapless, State
+silent, State
+scary, Emotion/State
+shaggy, Appearance
+organic, Quality
+unbecoming, Quality
+inexpensive, Cost
+wrong, Quality/State
+repulsive, Quality
+flawless, Quality
+labored, State
+disturbed, State
+aboard, Position
+gusty, Weather
+loud, Sound
+jumbled, State
+exotic, Origin/Style
+vulgar, Quality
+threatening, State/Behavior
+belligerent, Personality Trait
+synonymous, Characteristic
+encouraging, Effect
+fancy, Style
+embarrassed, Emotion
+clumsy, Personality Trait
+fast, Speed
+ethereal, Appearance
+chubby, Size/Appearance
+high-pitched, Sound
+plastic, Material
+open, State
+straight, Shape/State
+little, Size
+ancient, Age
+fair, Quality/Appearance
+psychotic, State
+murky, Appearance
+earthy, Appearance
+callous, Personality Trait
+heady, Effect
+lamentable, Emotion/State
+hallowed, State
+obtainable, Quality
+toothsome, Taste
+oafish, Behavior
+gainful, Quality
+flippant, Personality Trait
+tangy, Taste
+tightfisted, Personality Trait
+damaging, Effect
+utopian, Characteristic
+gaudy, Appearance
+brainy, Personality Trait
+imperfect, Quality
+shiny, Appearance
+fanatical, Personality Trait
+snotty, Personality Trait
+relieved, Emotion
+shallow, Depth/Quality
+foamy, Appearance
+parsimonious, Personality Trait
+gruesome, Quality
+elite, Status
+wide, Size
+kind, Personality Trait
+bored, Emotion
+tangible, Quality
+depressed, Emotion/State
+boring, Quality
+screeching, Sound
+outrageous, Quality
+determined, Personality Trait
+picayune, Quality
+glossy, Appearance
+historical, Characteristic
+staking, Action
+curious, Personality Trait
+gigantic, Size
+wandering, Behavior
+profuse, Quantity
+vengeful, Personality Trait
+glib, Personality Trait
+unaccountable, Quality
+frightened, Emotion
+outstanding, Quality
+chivalrous, Personality Trait
+workable, Quality
+modern, Time/Style
+swanky, Style
+comfortable, State/Quality
+gentle, Personality Trait
+substantial, Size/Quality
+brawny, Physical Appearance
+curved, Shape
+nebulous, Quality
+boorish, Personality Trait
+afraid, Emotion
+fierce, Intensity/Personality Trait
+efficient, Quality
+lackadaisical, Personality Trait
+recondite, Knowledge
+internal, Position
+absorbed, State
+squealing, Sound
+frail, Physical Property
+thundering, Sound
+wanting, Quality
+cooing, Sound
+axiomatic, Quality
+debonair, Personality Trait
+boiling, Temperature/State
+tired, State
+numberless, Quantity
+flowery, Appearance/Style
+mushy, Texture/State
+enthusiastic, Emotion/State
+proud, Emotion/Personality Trait
+upset, Emotion/State
+hungry, State
+astonishing, Quality
+deadpan, Expression
+prickly, Texture/Appearance
+mammoth, Size
+absurd, Quality
+clean, State
+jittery, State
+wry, Emotion/Expression
+entertaining, Effect
+literate, Knowledge
+lying, Behavior
+uninterested, State
+aquatic, Characteristic
+super, Intensity
+languid, State
+cute, Appearance/Quality
+absorbing, Effect
+scattered, State
+brief, Duration
+halting, State/Behavior
+bright, Color/Quality
+fuzzy, Texture/Appearance
+lethal, Effect
+scarce, Quantity
+aggressive, Behavior
+obsequious, Personality Trait
+fine, Quality
+giant, Size
+holistic, Characteristic
+pastoral, Style
+stormy, Weather
+quaint, Appearance/Style
+nervous, Emotion
+wasteful, Behavior/Quality
+grotesque, Appearance/Quality
+loutish, Behavior
+abiding, Quality
+unable, State
+black, Color
+dysfunctional, State/Quality
+knowledgeable, Knowledge
+truculent, Behavior
+various, Quantity/Variety
+luxuriant, Appearance/Quality
+shrill, Sound
+spiffy, Appearance
+guarded, Behavior/State
+colorful, Appearance
+misty, Appearance
+spurious, Quality
+freezing, Temperature/State
+glamorous, Appearance
+famous, Status
+new, Time/State
+instinctive, Characteristic
+nasty, Quality
+exultant, Emotion
+seemly, Quality
+tawdry, Appearance
+maniacal, Personality Trait
+wrathful, Emotion
+shy, Personality Trait
+nutritious, Quality
+idiotic, Personality Trait
+worried, Emotion
+bad, Quality
+stupid, Personality Trait
+ruddy, Color/Appearance
+wholesale, Quantity/Business
+naughty, Behavior
+thoughtless, Personality Trait
+futuristic, Time/Style
+available, State
+slimy, Texture/Appearance
+cynical, Personality Trait
+fluffy, Texture/Appearance
+plausible, Quality
+nasty, Quality
+tender, Texture/Quality
+changeable, Characteristic
+smiling, Expression/State
+oceanic, Characteristic
+satisfying, Effect
+steadfast, Personality Trait
+ugliest, Appearance
+crooked, Shape/Quality
+subsequent, Sequence
+fascinated, Emotion
+woozy, State
+teeny, Size
+quickest, Speed
+moldy, Appearance
+uppity, Personality Trait
+sable, Color
+horrible, Quality
+silly, Behavior/Personality Trait
+ad hoc, Characteristic
+numerous, Quantity
+berserk, State/Behavior
+wiry, Physical Appearance
+knowing, State
+lazy, Personality Trait
+childlike, Personality Trait
+zippy, Energy/Speed
+fearless, Personality Trait
+pumped, State
+weak, Strength
+tacit, Characteristic
+weary, State
+rapid, Speed
+precious, Quality
+smoggy, Weather/Appearance
+swift, Speed
+lyrical, Sound/Quality
+steep, Shape/Quality
+quack, Sound/Quality
+direful, Quality
+talented, Ability
+hesitant, State
+fallacious, Quality
+ill, State
+quarrelsome, Behavior
+quiet, Sound/State
+flipped-out, State
+didactic, Purpose
+fluttering, Sound/Appearance
+glorious, Quality
+tough, Strength/Quality
+sulky, Emotion/State
+elfin, Appearance
+abortive, Quality
+sweet, Taste/Emotion
+habitual, Characteristic
+supreme, Quality
+hollow, State/Shape
+possessive, Personality Trait
+inquisitive, Personality Trait
+adjoining, Position
+incandescent, Appearance/Quality
+lowly, Position/Status
+majestic, Appearance/Quality
+bizarre, Quality
+acrid, Taste/Quality
+expensive, Cost/Quality
+aback, State
+unusual, Characteristic
+foolish, Personality Trait
+jobless, State
+capable, Ability
+damp, State/Texture
+political, Characteristic
+dazzling, Appearance/Effect
+erect, Position/State
+Early, Time
+immense, Size
+hellish, Quality
+omniscient, Knowledge
+reflective, Characteristic
+lovely, Appearance
+incompetent, Ability
+empty, State/Quality
+breakable, Quality
+educated, State/Knowledge
+easy, Quality
+devilish, Personality Trait
+assorted, Variety
+decorous, Behavior/Characteristic
+jaded, State
+homely, Appearance
+dangerous, Quality
+adaptable, Personality Trait
+coherent, Quality
+dramatic, Style/Behavior
+tense, State
+abject, Quality
+fretful, Emotion
+troubled, State
+diligent, Personality Trait
+solid, Physical Property
+plain, Appearance/Quality
+raspy, Sound/Texture
+irate, Emotion
+offbeat, Style/Characteristic
+healthy, State
+melted, State
+cagey, Personality Trait
+many, Quantity
+wild, Behavior/Characteristic
+venomous, Quality
+animated, State/Behavior
+alike, Similarity
+youthful, Age/State
+ripe, State
+alcoholic, State
+sincere, Personality Trait
+teeny-tiny, Size
+lush, Appearance/Quality
+defeated, State
+zonked, State
+foregoing, State
+dizzy, State
+frantic, State
+obnoxious, Personality Trait
+funny, Emotion/Quality
+damaged, State/Quality
+grandiose, Appearance/Quality
+spectacular, Appearance/Quality
+maddening, Effect/Quality
+defiant, Personality Trait
+makeshift, Quality
+strange, Quality
+painstaking, Effort
+merciful, Personality Trait
+madly, State
+clammy, Texture/State
+itchy, State
+difficult, Quality
+clear, Quality/Visibility
+used, State
+temporary, Duration
+abandoned, State
+null, State/Quality
+rainy, Weather
+evil, Quality/Character
+alert, State/Emotion
+domineering, Personality Trait
+amuck, State/Behavior
+rabid, Emotion/State
+jealous, Emotion
+robust, Strength/Health
+obeisant, Behavior
+overt, Visibility/Behavior
+enchanting, Effect/Quality
+longing, Emotion/State
+cautious, Personality Trait
+motionless, State
+bitter, Emotion/Taste
+anxious, Emotion
+craven, Personality Trait
+breezy, Weather/Appearance
+ragged, Appearance
+skillful, Ability
+quixotic, Personality Trait
+knotty, Texture/Quality
+grumpy, Personality Trait
+dark, Light/Quality
+draconian, Policy/Quality
+alluring, Appearance/Effect
+magical, Characteristic/Effect
+versed, Knowledge
+humdrum, Quality
+accurate, Quality
+ludicrous, Quality
+sleepy, State
+envious, Emotion
+lavish, Quality/Amount
+roasted, State/Quality
+thinkable, Possibility
+overconfident, Personality Trait
+roomy, Space/Quality
+painful, Emotion/State
+wee, Size
+observant, Personality Trait
+old-fashioned, Style/Characteristic
+drunk, State
+royal, Status/Characteristic
+likeable, Personality Trait
+adventurous, Personality Trait
+eager, Emotion/State
+obedient, Behavior/Personality Trait
+attractive, Appearance/Quality
+x-rated, Content Rating
+spooky, Emotion/Appearance
+poised, State/Behavior
+righteous, Personality Trait
+excited, Emotion
+real, State/Quality
+abashed, Emotion
+womanly, Characteristic
+ambitious, Personality Trait
+lacking, State/Quality
+testy, Emotion/Personality Trait
+big, Size
+gamy, Taste/Quality
+early, Time/State
+auspicious, Quality/State
+blue-eyed, Appearance
+discreet, Personality Trait
+nappy, Appearance/Texture
+vague, Quality/Clarity
+helpful, Personality Trait
+nosy, Personality Trait
+perpetual, Duration
+disillusioned, Emotion/State
+overrated, Quality
+gleaming, Appearance
+tart, Taste
+soft, Texture/State
+agreeable, Personality Trait
+therapeutic, Effect
+accessible, Quality/State
+poor, Quality/State
+gifted, Ability/State
+old, Age
+humorous, Personality Trait
+flagrant, Quality/Behavior
+magnificent, Quality/Appearance
+alive, State
+understood, State
+economic, Characteristic
+mighty, Strength/Quality
+ablaze, State
+racial, Characteristic
+tasteful, Appearance/Quality
+purple, Color
+broad, Size/Width
+lean, Body Type
+legal, Status/Quality
+witty, Personality Trait
+nutty, Taste/Quality
+icy, Temperature/Appearance
+feigned, State/Quality
+redundant, Quality
+adorable, Appearance/Quality
+apathetic, Emotion/State
+jumpy, State/Emotion
+scientific, Characteristic/Style
+combative, Personality Trait
+worthless, Quality
+tasteless, Taste/Quality
+voracious, Appetite/Personality Trait
+jazzy, Style/Characteristic
+uptight, State/Personality Trait
+utter, Intensity/Quality
+hospitable, Personality Trait
+imaginary, State/Characteristic
+finicky, Personality Trait
+shocking, Effect/Quality
+dead, State
+noisy, Sound/State
+shivering, State
+subdued, State/Quality
+rare, Quantity/Quality
+zealous, Personality Trait
+demonic, Characteristic
+ratty, Appearance/Quality
+snobbish, Personality Trait
+deranged, State/Personality Trait
+muddy, Appearance/Quality
+whispering, Sound
+credible, Quality
+hulking, Size/Appearance
+fertile, Quality
+tight, State/Quality
+abusive, Behavior/Personality Trait
+functional, State/Quality
+obscene, Content/Quality
+thankful, Emotion
+daffy, Personality Trait
+smelly, Sense/Taste
+lively, State/Emotion
+homeless, State
+secretive, Personality Trait
+amused, Emotion
+lewd, Content/Behavior
+mere, Quantity/Quality
+agonizing, Emotion/State
+sad, Emotion
+innate, Characteristic
+sneaky, Behavior/Personality Trait
+noxious, Quality/Taste
+illustrious, Status/Quality
+alleged, Quality/State
+cultured, Personality Trait/Knowledge
+tame, Behavior/State
+macabre, Style/Characteristic
+lonely, Emotion/State
+mindless, Quality/Characteristic
+low, Height/State
+scintillating, Quality/Effect
+statuesque, Appearance
+decisive, Personality Trait
+rhetorical, Characteristic
+hysterical, Emotion/State
+happy, Emotion
+earsplitting, Sound
+mundane, Quality/Characteristic
+spicy, Taste/Quality
+overjoyed, Emotion
+taboo, Content/Characteristic
+peaceful, Emotion/State
+forgetful, Personality Trait
+elderly, Age
+upbeat, Emotion/State
+squalid, Quality/Appearance
+warlike, Behavior/Characteristic
+dull, Quality/Characteristic
+plucky, Personality Trait
+handsome, Appearance/Quality
+groovy, Style/Characteristic
+absent, State
+wise, Knowledge/Personality Trait
+romantic, Characteristic/Emotion
+invincible, State/Quality
+receptive, Personality Trait
+smooth, Texture/Quality
+different, Quality/Characteristic
+tiny, Size
+cruel, Personality Trait
+dirty, Appearance/State
+mature, Age/State
+faded, Appearance/State
+tiresome, Quality/Characteristic
+wicked, Personality Trait/Quality
+average, Quantity/Quality
+panicky, Emotion/State
+detailed, Quality/Characteristic
+juvenile, Age/Personality Trait
+scandalous, Quality/Characteristic
+steady, Quality/Characteristic
+wealthy, State/Quality
+deep, Depth/Quality
+sticky, Texture/State
+jagged, Shape/Quality
+wide-eyed, Appearance/Expression
+tasty, Taste/Quality
+disgusted, Emotion
+garrulous, Personality Trait
+graceful, Appearance/Personality Trait
+tranquil, Emotion/State
+annoying, Personality Trait/Effect
+hissing, Sound
+noiseless, Sound/State
+selfish, Personality Trait
+onerous, Quality/Characteristic
+lopsided, Shape/Quality
+ossified, State/Characteristic
+penitent, Emotion/State
+malicious, Personality Trait
+aromatic, Smell/Taste
+successful, State/Quality
+zany, Personality Trait/Quality
+evasive, Behavior/Personality Trait
+wet, State/Texture
+naive, Personality Trait/Characteristic
+nice, Quality/Characteristic
+uttermost, Intensity/Quality
+brash, Personality Trait/Characteristic
+muddled, State/Condition
+energetic, Energy/State
+accidental, Origin/Quality
+silky, Texture/Appearance
+guiltless, State/Quality
+important, Quality/Characteristic
+drab, Appearance/Quality
+aware, State/Knowledge
+skinny, Size/Appearance
+careful, Personality Trait
+rightful, State/Characteristic
+tricky, Quality/Characteristic
+sore, State/Emotion
+rich, Quality/State
+blushing, State/Appearance
+stale, Quality/State
+daily, Frequency
+watchful, Personality Trait
+uncovered, State/Appearance
+rough, Texture/Quality
+fresh, State/Quality
+hushed, Sound/State
+rural, Location/Characteristic
