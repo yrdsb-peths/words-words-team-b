@@ -20,6 +20,8 @@ public class Letter extends Actor
         xPos = theXPos;
         yPos = theYPos;
         
+        setImage((GreenfootImage)null);
+        
         letterLabel = new Label(Character.toString(letter), size);
     }
 
