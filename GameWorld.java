@@ -101,12 +101,12 @@ public class GameWorld extends World {
                 } else if (incorrect == 6) {
                     HangmanBody rightLeg = new HangmanBody("arm", false);
                     addObject(rightLeg, 580, 430);
-                } else {
+                    
                     // create game end screen
                     isWin = false;
                     EndScreen newScreen = new EndScreen(isWin);
                     Greenfoot.setWorld(newScreen);
-                }
+                } 
             }
         }
     }
