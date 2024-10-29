@@ -38,6 +38,8 @@ public class GameWorld extends World {
     public void act() {
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
+        // Checks if user got the word right
+        checkWin();
     }
 
     private void updateWordLabel(char[] word) {
@@ -64,7 +66,7 @@ public class GameWorld extends World {
 
             // Update the word label
             updateWordLabel(currentWord);
-
+            
             // If the letter is not in the word
             if (!letterInWord) {
                 // TODO handle incorrect guesses
@@ -87,5 +89,23 @@ public class GameWorld extends World {
         
         return alphabet;
 
+    }
+    
+    // Checks if currentWord matches trueWord, then goes to EndScreen if true
+    private void checkWin()
+    {
+        int count = 0;
+        for(int i = 0; i < trueWord.length; i++)
+        {
+            if(currentWord[i] == trueWord[i])
+            {
+                count++;
+            }
+        }
+        if(count == trueWord.length)
+        {
+            EndScreen newScreen = new EndScreen();
+            Greenfoot.setWorld(newScreen);
+        }
     }
 }
