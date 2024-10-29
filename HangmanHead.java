@@ -16,13 +16,13 @@ public class HangmanHead extends Hangman {
         // head 
         headGif = new GifImage("head.gif");
         headPic = new GreenfootImage("images/head.png");
-        headPic.scale(75,75);
+        headPic.scale(150,150);
 
         List<GreenfootImage> images = headGif.getImages(); // get list of images
         imageOne = images.get(0); // get reference to first image
 
         for (GreenfootImage img : images) {
-            img.scale(75, 75); // scale all images
+            img.scale(150, 150); // scale all images
         }
     
         setImage(headGif.getCurrentImage()); // set initial image
