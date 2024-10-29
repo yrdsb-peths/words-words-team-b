@@ -76,10 +76,6 @@ public class GameWorld extends World {
             if (!letterInWord) {
                 // TODO handle incorrect guesses
                 incorrect++;
-                incorrectLetterX += 50;
-
-                Label incorrectLetter = new Label(letter, 30);
-                addObject(incorrectLetter, incorrectLetterX, 550);
 
                 if(incorrect == 1 ) {
                     HangmanHead head = new HangmanHead();

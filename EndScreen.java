@@ -19,7 +19,6 @@ public class EndScreen extends World{
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
         
         fontColor();
-        
     }
     
     public void act()
