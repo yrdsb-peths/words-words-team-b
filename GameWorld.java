@@ -40,8 +40,6 @@ public class GameWorld extends World {
     public void act() {
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
-        // Checks if user got the word right
-        checkWin();
     }
 
     private void updateWordLabel(char[] word) {
@@ -72,11 +70,15 @@ public class GameWorld extends World {
             // Update the word label
             updateWordLabel(currentWord);
             
-            // If the letter is not in the word
-            if (!letterInWord) {
-                // TODO handle incorrect guesses
+            if(letterInWord)
+            {
+                // Checks if user got the word right
+                checkWin();
+            }
+            else
+            {
                 incorrect++;
-
+                
                 if(incorrect == 1 ) {
                     HangmanHead head = new HangmanHead();
                     addObject(head, 500, 285);
@@ -151,7 +153,7 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            EndScreen newScreen = new EndScreen(this);
+            EndScreen newScreen = new EndScreen();
             Greenfoot.setWorld(newScreen);
         }
     }
