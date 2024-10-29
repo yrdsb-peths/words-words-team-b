@@ -1,13 +1,15 @@
-import greenfoot.World;
-import greenfoot.Color;
+import greenfoot.*;
 
 public class EndScreen extends World{
     Label titleLabel; 
+    private GameWorld gameWorld;
     
-    public EndScreen() 
+    public EndScreen(GameWorld theGameWorld) 
     {
         super(600, 400, 1);
-
+        
+        this.gameWorld = theGameWorld;
+        
         setBackground("images/black-background.jpg");
         // if win
         titleLabel = new Label("YOU WON!", 60);
@@ -19,12 +21,20 @@ public class EndScreen extends World{
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
         
         fontColor();
+        
+        CreateNextRoundButton();
     }
     
-    public void act()
+    public void CreateNextRoundButton()
     {
-        // Add your action code here.
-
+        // Add buttons 
+        Button nextRoundButton = new NextRoundButton(this::nextRound);
+        addObject(nextRoundButton, 300, 340);
+    }
+    
+    public void nextRound()
+    {
+        Greenfoot.setWorld(gameWorld);
     }
     
     private void fontColor()

@@ -140,6 +140,7 @@ public class GameWorld extends World {
     private void checkWin()
     {
         int count = 0;
+        
         for(int i = 0; i < trueWord.length; i++)
         {
             if(currentWord[i] == trueWord[i])
@@ -147,9 +148,10 @@ public class GameWorld extends World {
                 count++;
             }
         }
+        
         if(count == trueWord.length)
         {
-            EndScreen newScreen = new EndScreen();
+            EndScreen newScreen = new EndScreen(this);
             Greenfoot.setWorld(newScreen);
         }
     }
