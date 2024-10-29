@@ -4,7 +4,7 @@ public class Letter extends Actor
 {
     private char letter;
     private boolean guessed = false;
-    private int size = 10;
+    private int size = 50;
     
     private int xPos;
     private int yPos;
@@ -20,7 +20,9 @@ public class Letter extends Actor
         xPos = theXPos;
         yPos = theYPos;
         
-        letterLabel = new Label(letter, size);
+        setImage((GreenfootImage)null);
+        
+        letterLabel = new Label(Character.toString(letter), size);
     }
 
     public void addedToWorld(World world)
@@ -30,9 +32,9 @@ public class Letter extends Actor
 
     public void guess()
     {
-        guessed = true;
+        if (!guessed) crossLetter();
         
-        crossLetter();
+        guessed = true;
     }
     
     public void crossLetter()
