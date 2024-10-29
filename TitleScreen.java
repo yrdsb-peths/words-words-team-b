@@ -7,9 +7,11 @@ public class TitleScreen extends World {
     public TitleScreen() {
         super(600, 400, 1);
 
+        // Add game name 
         Label gameLabel = new Label("Hangman", 100);
         addObject(gameLabel, getWidth()/2, 100);
 
+        // Add buttons 
         Button startButton = new StartButton(this::goGameScreen);
         addObject(startButton, 300, 340);
 
@@ -20,12 +22,18 @@ public class TitleScreen extends World {
         // addObject(starButton, 50, 50);
     }
 
+    /*
+     * Plays or pauses the music 
+     */
     public void changeVolume() {
         ((MusicButton) musicButton).setButton(); 
     }
 
+    /*
+     * Create game screen 
+     */
     public void goGameScreen() {
-        Greenfoot.setWorld(new MyWorld());
+        Greenfoot.setWorld(new GameWorld());
     }
 
 
