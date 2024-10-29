@@ -8,6 +8,8 @@ public class GameWorld extends World {
     private char[] trueWord;
     private char[] currentWord;
     private Label wordLabel;
+    private int incorrect = 0; 
+    private int incorrectLetterX = 350;
     
     public GameWorld() {
         super(1000, 600, 1);
@@ -70,6 +72,33 @@ public class GameWorld extends World {
             // If the letter is not in the word
             if (!letterInWord) {
                 // TODO handle incorrect guesses
+                incorrect++;
+                incorrectLetterX += 50;
+
+                Label incorrectLetter = new Label(letter, 30);
+                addObject(incorrectLetter, incorrectLetterX, 550);
+
+                if(incorrect == 1 ) {
+                    HangmanHead head = new HangmanHead();
+                    addObject(head, 500, 285);
+                } else if (incorrect == 2) {
+                    HangmanBody body = new HangmanBody("body", false);
+                    addObject(body, 570, 388);
+                } else if (incorrect == 3) {
+                    HangmanBody leftArm = new HangmanBody("arm", true);
+                    addObject(leftArm, 420, 340);
+                } else if (incorrect == 4) {
+                    HangmanBody rightArm = new HangmanBody("arm", false);
+                    addObject(rightArm, 580, 340);
+                } else if (incorrect == 5) {
+                    HangmanBody leftLeg = new HangmanBody("leg", true);
+                    addObject(leftLeg, 420, 430);
+                } else if (incorrect == 6) {
+                    HangmanBody rightLeg = new HangmanBody("arm", false);
+                    addObject(rightLeg, 580, 430);
+                } else {
+                    // create game end screen
+                }
             }
         }
     }
