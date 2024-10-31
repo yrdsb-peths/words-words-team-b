@@ -15,8 +15,6 @@ public class GameWorld extends World {
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
     
-    boolean isWin = false;
-    
     public GameWorld() {
         super(1000, 600, 1);
         
@@ -113,9 +111,7 @@ public class GameWorld extends World {
                     HangmanBody rightLeg = new HangmanBody("arm", false);
                     addObject(rightLeg, 580, 430);
                     
-                    // create game end screen
-                    isWin = false;
-                    EndScreen newScreen = new EndScreen(isWin);
+                    EndScreen newScreen = new EndScreen();
                     Greenfoot.setWorld(newScreen);
                 } 
             }
@@ -173,8 +169,7 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            isWin = true;
-            EndScreen newScreen = new EndScreen(isWin);
+            NextRoundScreen newScreen = new NextRoundScreen();
             Greenfoot.setWorld(newScreen);
         }
     }
