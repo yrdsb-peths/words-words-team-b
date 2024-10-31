@@ -7,15 +7,25 @@ public class GameWorld extends World {
 
     private char[] trueWord;
     private char[] currentWord;
+    private String category;
+
     private Label wordLabel;
+    private Label categoryLabel;
+
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
+    
+    boolean isWin = false;
     
     public GameWorld() {
         super(1000, 600, 1);
         
-        // Load a random word for the game
-        trueWord = WordLoader.getRandomWord(WordLoader.loadWords("word-lists/nouns.txt")).toCharArray();
+        // Load a random word for the game from a random list
+        String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
+        String[] randomWord = WordLoader.getRandomWord(wordLists[(int) (Math.random() * wordLists.length)]);
+        // Separate the word and the category
+        trueWord = randomWord[0].toCharArray();
+        category = randomWord[1];
 
         // Fill the current word with underscores, check if space or dash, if so, display it
         currentWord = new char[trueWord.length];
@@ -29,10 +39,16 @@ public class GameWorld extends World {
 
         // Create a label to display the word, and add it to the world
         wordLabel = new Label(String.valueOf(currentWord), 60);
+        // Font fill black - default is gross hollow text
         wordLabel.setFillColor(Color.BLACK);
         addObject(wordLabel, getWidth() / 2, 100);
-
+        // Update the word label - initial display
         updateWordLabel(currentWord);
+
+        // Create a label to display the category
+        categoryLabel = new Label("Category: " + category, 30);
+        categoryLabel.setFillColor(Color.BLACK);
+        addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
     }
@@ -96,9 +112,12 @@ public class GameWorld extends World {
                 } else if (incorrect == 6) {
                     HangmanBody rightLeg = new HangmanBody("arm", false);
                     addObject(rightLeg, 580, 430);
-                } else {
+                    
                     // create game end screen
-                }
+                    isWin = false;
+                    EndScreen newScreen = new EndScreen(isWin);
+                    Greenfoot.setWorld(newScreen);
+                } 
             }
             
             alphabetMap.get(letter.charAt(0)).guess();
@@ -154,7 +173,8 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            EndScreen newScreen = new EndScreen();
+            isWin = true;
+            EndScreen newScreen = new EndScreen(isWin);
             Greenfoot.setWorld(newScreen);
         }
     }
