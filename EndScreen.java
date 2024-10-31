@@ -2,31 +2,21 @@ import greenfoot.*;
 
 public class EndScreen extends World{
     Label titleLabel; 
-    boolean isWin;
     
-    public EndScreen(boolean isWin) 
+    public EndScreen() 
     {
         super(600, 400, 1);
         
         setBackground("images/black-background.jpg");
         
-        this.isWin = isWin;
-        // if win
-        if(this.isWin == true)
-        {
-            titleLabel = new Label("YOU WON!", 60);
-            fireworks();
-        }
-        else // else if lost
-        {
-            titleLabel = new Label("YOU LOST", 60);
-        }
+        titleLabel = new Label("YOU LOST", 60);
+        
         
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
         
         fontColor();
         
-        CreateNextRoundButton();
+        fireworks();
     }
     
     public void CreateNextRoundButton()
