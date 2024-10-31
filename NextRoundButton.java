@@ -15,7 +15,6 @@ public class NextRoundButton extends Button
         // Load and set image 
         GreenfootImage image = new GreenfootImage("images/greenButton.png");
         image.scale(200, 75);
-        
         setImage(image);
     }
 }
