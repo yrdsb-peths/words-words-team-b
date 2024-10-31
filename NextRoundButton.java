@@ -11,5 +11,6 @@ public class NextRoundButton extends Button
     public NextRoundButton(Runnable action)
     {
         super(action);
+        
     }
 }

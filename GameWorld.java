@@ -55,7 +55,6 @@ public class GameWorld extends World {
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
         if (letter != null && letter.length() == 1) {
-            alphabetMap.get(letter.charAt(0)).guess();
             
             // Check if the letter is in the word
             boolean letterInWord = false;
@@ -75,7 +74,7 @@ public class GameWorld extends World {
                 // Checks if user got the word right
                 checkWin();
             }
-            else
+            else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
             {
                 incorrect++;
                 
@@ -101,6 +100,8 @@ public class GameWorld extends World {
                     // create game end screen
                 }
             }
+            
+            alphabetMap.get(letter.charAt(0)).guess();
         }
     }
 
