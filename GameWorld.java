@@ -15,12 +15,13 @@ public class GameWorld extends World {
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
     Face face;
+    boolean isWin = false;
     
 
     public GameWorld(Face face) {
-        boolean isWin = false;
         super(1000, 600, 1);
         this.face = face;
+
         
         // Load a random word for the game from a random list
         String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};

@@ -38,7 +38,7 @@ public class EndScreen extends World{
     
     public void nextRound()
     {
-        Greenfoot.setWorld(new GameWorld());
+        Greenfoot.setWorld(new GameWorld(null));
     }
     
     private void fontColor()
