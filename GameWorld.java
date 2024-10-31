@@ -10,9 +10,11 @@ public class GameWorld extends World {
     private Label wordLabel;
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
+    Face face;
     
-    public GameWorld() {
+    public GameWorld(Face face) {
         super(1000, 600, 1);
+        this.face = face;
         
         // Load a random word for the game
         trueWord = WordLoader.getRandomWord(WordLoader.loadWords("word-lists/nouns.txt")).toCharArray();
@@ -76,36 +78,37 @@ public class GameWorld extends World {
             if (!letterInWord) {
                 // TODO handle incorrect guesses
                 incorrect++;
-                incorrectLetterX += 50;
-
-                Label incorrectLetter = new Label(letter, 30);
-                addObject(incorrectLetter, incorrectLetterX, 550);
-
-                if(incorrect == 1 ) {
-                    HangmanHead head = new HangmanHead();
-                    addObject(head, 500, 285);
-                } else if (incorrect == 2) {
-                    HangmanBody body = new HangmanBody("body", false);
-                    addObject(body, 570, 388);
-                } else if (incorrect == 3) {
-                    HangmanBody leftArm = new HangmanBody("arm", true);
-                    addObject(leftArm, 420, 340);
-                } else if (incorrect == 4) {
-                    HangmanBody rightArm = new HangmanBody("arm", false);
-                    addObject(rightArm, 580, 340);
-                } else if (incorrect == 5) {
-                    HangmanBody leftLeg = new HangmanBody("leg", true);
-                    addObject(leftLeg, 420, 430);
-                } else if (incorrect == 6) {
-                    HangmanBody rightLeg = new HangmanBody("arm", false);
-                    addObject(rightLeg, 580, 430);
-                } else {
-                    // create game end screen
-                }
+                createHangman();
+                
             }
         }
     }
 
+    private void createHangman() {
+        if(incorrect == 1 ) {
+            HangmanHead head = new HangmanHead();
+            addObject(head, 500, 285);
+        } else if (incorrect == 2) {
+            HangmanBodyParts body = new HangmanBodyParts("body", false);
+            addObject(body, 570, 388);
+        } else if (incorrect == 3) {
+            HangmanBodyParts leftArm = new HangmanBodyParts("arm", true);
+            addObject(leftArm, 420, 340);
+        } else if (incorrect == 4) {
+            HangmanBodyParts rightArm = new HangmanBodyParts("arm", false);
+            addObject(rightArm, 580, 340);
+        } else if (incorrect == 5) {
+            HangmanBodyParts leftLeg = new HangmanBodyParts("leg", true);
+            addObject(leftLeg, 420, 430);
+        } else if (incorrect == 6) {
+            HangmanBodyParts rightLeg = new HangmanBodyParts("arm", false);
+            addObject(rightLeg, 580, 430);
+        } else if (incorrect == 7){
+            addObject(face, 498, 289);
+        } else {
+            // create game end screen
+        }
+    }
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
     {
