@@ -56,8 +56,6 @@ public class GameWorld extends World {
     public void act() {
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
-        // Checks if user got the word right
-        checkWin();
     }
 
     private void updateWordLabel(char[] word) {
@@ -73,7 +71,6 @@ public class GameWorld extends World {
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
         if (letter != null && letter.length() == 1) {
-            alphabetMap.get(letter.charAt(0)).guess();
             
             // Check if the letter is in the word
             boolean letterInWord = false;
@@ -88,15 +85,15 @@ public class GameWorld extends World {
             // Update the word label
             updateWordLabel(currentWord);
             
-            // If the letter is not in the word
-            if (!letterInWord) {
-                // TODO handle incorrect guesses
+            if(letterInWord)
+            {
+                // Checks if user got the word right
+                checkWin();
+            }
+            else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
+            {
                 incorrect++;
-                incorrectLetterX += 50;
-
-                Label incorrectLetter = new Label(letter, 30);
-                addObject(incorrectLetter, incorrectLetterX, 550);
-
+                
                 if(incorrect == 1 ) {
                     HangmanHead head = new HangmanHead();
                     addObject(head, 500, 285);
@@ -122,6 +119,8 @@ public class GameWorld extends World {
                     Greenfoot.setWorld(newScreen);
                 } 
             }
+            
+            alphabetMap.get(letter.charAt(0)).guess();
         }
     }
 
@@ -163,6 +162,7 @@ public class GameWorld extends World {
     private void checkWin()
     {
         int count = 0;
+        
         for(int i = 0; i < trueWord.length; i++)
         {
             if(currentWord[i] == trueWord[i])
@@ -170,6 +170,7 @@ public class GameWorld extends World {
                 count++;
             }
         }
+        
         if(count == trueWord.length)
         {
             isWin = true;

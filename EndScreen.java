@@ -1,5 +1,4 @@
-import greenfoot.World;
-import greenfoot.Color;
+import greenfoot.*;
 
 public class EndScreen extends World{
     Label titleLabel; 
@@ -8,7 +7,7 @@ public class EndScreen extends World{
     public EndScreen(boolean isWin) 
     {
         super(600, 400, 1);
-
+        
         setBackground("images/black-background.jpg");
         
         this.isWin = isWin;
@@ -26,12 +25,20 @@ public class EndScreen extends World{
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
         
         fontColor();
+        
+        CreateNextRoundButton();
     }
     
-    public void act()
+    public void CreateNextRoundButton()
     {
-        // Add your action code here.
-
+        // Add buttons 
+        Button nextRoundButton = new NextRoundButton(this::nextRound);
+        addObject(nextRoundButton, 300, 340);
+    }
+    
+    public void nextRound()
+    {
+        Greenfoot.setWorld(new GameWorld());
     }
     
     private void fontColor()
