@@ -7,17 +7,27 @@ public class GameWorld extends World {
 
     private char[] trueWord;
     private char[] currentWord;
+    private String category;
+
     private Label wordLabel;
+    private Label categoryLabel;
+
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
     Face face;
     
+
     public GameWorld(Face face) {
+        boolean isWin = false;
         super(1000, 600, 1);
         this.face = face;
         
-        // Load a random word for the game
-        trueWord = WordLoader.getRandomWord(WordLoader.loadWords("word-lists/nouns.txt")).toCharArray();
+        // Load a random word for the game from a random list
+        String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
+        String[] randomWord = WordLoader.getRandomWord(wordLists[(int) (Math.random() * wordLists.length)]);
+        // Separate the word and the category
+        trueWord = randomWord[0].toCharArray();
+        category = randomWord[1];
 
         // Fill the current word with underscores, check if space or dash, if so, display it
         currentWord = new char[trueWord.length];
@@ -31,10 +41,16 @@ public class GameWorld extends World {
 
         // Create a label to display the word, and add it to the world
         wordLabel = new Label(String.valueOf(currentWord), 60);
+        // Font fill black - default is gross hollow text
         wordLabel.setFillColor(Color.BLACK);
         addObject(wordLabel, getWidth() / 2, 100);
-
+        // Update the word label - initial display
         updateWordLabel(currentWord);
+
+        // Create a label to display the category
+        categoryLabel = new Label("Category: " + category, 30);
+        categoryLabel.setFillColor(Color.BLACK);
+        addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
     }
@@ -42,8 +58,6 @@ public class GameWorld extends World {
     public void act() {
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
-        // Checks if user got the word right
-        checkWin();
     }
 
     private void updateWordLabel(char[] word) {
@@ -59,7 +73,6 @@ public class GameWorld extends World {
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
         if (letter != null && letter.length() == 1) {
-            alphabetMap.get(letter.charAt(0)).guess();
             
             // Check if the letter is in the word
             boolean letterInWord = false;
@@ -74,13 +87,19 @@ public class GameWorld extends World {
             // Update the word label
             updateWordLabel(currentWord);
             
-            // If the letter is not in the word
-            if (!letterInWord) {
-                // TODO handle incorrect guesses
+            if(letterInWord)
+            {
+                // Checks if user got the word right
+                checkWin();
+            }
+            else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
+            {
                 incorrect++;
                 createHangman();
-                
+         
             }
+            
+            alphabetMap.get(letter.charAt(0)).guess();
         }
     }
 
@@ -105,9 +124,14 @@ public class GameWorld extends World {
             addObject(rightLeg, 580, 430);
         } else if (incorrect == 7){
             addObject(face, 498, 289);
-        } else {
-            // create game end screen
+          
+           // create game end screen
+            isWin = false;
+            EndScreen newScreen = new EndScreen(isWin);
+            Greenfoot.setWorld(newScreen);
+          
         }
+      
     }
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
@@ -147,6 +171,7 @@ public class GameWorld extends World {
     private void checkWin()
     {
         int count = 0;
+        
         for(int i = 0; i < trueWord.length; i++)
         {
             if(currentWord[i] == trueWord[i])
@@ -154,9 +179,11 @@ public class GameWorld extends World {
                 count++;
             }
         }
+        
         if(count == trueWord.length)
         {
-            EndScreen newScreen = new EndScreen();
+            isWin = true;
+            EndScreen newScreen = new EndScreen(isWin);
             Greenfoot.setWorld(newScreen);
         }
     }

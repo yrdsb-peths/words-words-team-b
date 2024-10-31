@@ -1,0 +1,2585 @@
+aardvark, Animal
+abyssinian, Cat Breed
+accelerator, Automotive Part
+accordion, Musical Instrument
+account, Finance
+accountant, Profession
+acknowledgment, Communication
+acoustic, Music
+acrylic, Art Material
+act, Performance
+action, Movement
+active, State
+activity, Event
+actor, Profession
+actress, Profession
+adapter, Electronics
+addition, Mathematics
+address, Location
+adjustment, Change
+adult, Age Group
+advantage, Benefit
+advertisement, Marketing
+advice, Guidance
+afghanistan, Country
+africa, Continent
+aftermath, Consequence
+afternoon, Time of Day
+aftershave, Grooming Product
+afterthought, Cognition
+age, Measurement
+agenda, Planning
+agreement, Contract
+air, Element
+airbus, Aircraft Manufacturer
+airmail, Postal Service
+airplane, Transportation
+airport, Infrastructure
+airship, Aircraft
+alarm, Safety Device
+albatross, Bird
+alcohol, Beverage
+algebra, Mathematics
+algeria, Country
+alibi, Legal Term
+alley, Urban Feature
+alligator, Reptile
+alloy, Material
+almanac, Reference Book
+alphabet, Language
+alto, Music
+aluminium, Element
+aluminum, Element
+ambulance, Emergency Vehicle
+america, Continent
+amount, Quantity
+amusement, Entertainment
+anatomy, Biology
+anethesiologist, Medical Profession
+anger, Emotion
+angle, Geometry
+angora, Fabric
+animal, Living Organism
+anime, Animation
+ankle, Body Part
+answer, Response
+ant, Insect
+antarctica, Continent
+anteater, Animal
+antelope, Animal
+anthony, Name
+anthropology, Social Science
+apartment, Housing
+apology, Communication
+apparatus, Equipment
+apparel, Clothing
+appeal, Legal Term
+appendix, Anatomy
+apple, Fruit
+appliance, Household Item
+approval, Acceptance
+april, Month
+aquarius, Zodiac Sign
+arch, Architecture
+archaeology, Science
+archeology, Science
+archer, Sport
+architecture, Design
+area, Measurement
+argentina, Country
+argument, Debate
+aries, Zodiac Sign
+arithmetic, Mathematics
+arm, Body Part
+armadillo, Animal
+armchair, Furniture
+armenian, Nationality
+army, Military
+arrow, Weapon
+art, Creative Expression
+ash, Tree
+ashtray, Smoking Accessory
+asia, Continent
+asparagus, Vegetable
+asphalt, Construction Material
+asterisk, Punctuation
+astronomy, Science
+athlete, Sports Person
+atm, Banking Device
+atom, Physics
+attack, Aggression
+attempt, Effort
+attention, Focus
+attic, Building Part
+attraction, Appeal
+august, Month
+aunt, Family Relation
+australia, Country
+australian, Nationality
+author, Profession
+authorisation, Permission
+authority, Power
+authorization, Approval
+avenue, Road
+babies, Young Humans
+baboon, Primate
+baby, Infant
+back, Body Part
+backbone, Anatomy
+bacon, Food
+badge, Identification
+badger, Animal
+bag, Container
+bagel, Food
+bagpipe, Musical Instrument
+bail, Legal Term
+bait, Fishing Equipment
+baker, Profession
+bakery, Food Establishment
+balance, Equilibrium
+balinese, Cat Breed
+ball, Sports Equipment
+balloon, Inflatable Object
+bamboo, Plant
+banana, Fruit
+band, Music Group
+bandana, Accessory
+bangladesh, Country
+bangle, Jewelry
+banjo, Musical Instrument
+bank, Financial Institution
+bankbook, Financial Document
+banker, Profession
+bar, Establishment
+barbara, Name
+barber, Profession
+barge, Watercraft
+baritone, Music
+barometer, Weather Instrument
+base, Foundation
+baseball, Sport
+basement, Building Part
+basin, Container
+basket, Container
+basketball, Sport
+bass, Music
+bassoon, Musical Instrument
+bat, Animal
+bath, Hygiene
+bathroom, Room
+bathtub, Plumbing Fixture
+battery, Power Source
+battle, Conflict
+bay, Geographical Feature
+beach, Coastal Area
+bead, Craft Item
+beam, Construction
+bean, Legume
+bear, Animal
+beard, Facial Hair
+beast, Creature
+beat, Rhythm
+beautician, Profession
+beauty, Aesthetics
+beaver, Animal
+bed, Furniture
+bedroom, Room
+bee, Insect
+beech, Tree
+beef, Food
+beer, Beverage
+beet, Vegetable
+beetle, Insect
+beggar, Person
+beginner, Novice
+begonia, Flower
+behavior, Conduct
+belgian, Nationality
+belief, Conviction
+believe, Faith
+bell, Sound Device
+belt, Accessory
+bench, Furniture
+bengal, Cat Breed
+beret, Hat
+berry, Fruit
+bestseller, Book
+betty, Name
+bibliography, Reference
+bicycle, Vehicle
+bike, Vehicle
+bill, Financial Document
+billboard, Advertisement
+biology, Science
+biplane, Aircraft
+birch, Tree
+bird, Animal
+birth, Life Event
+birthday, Celebration
+bit, Computer Term
+bite, Action
+black, Color
+bladder, Anatomy
+blade, Tool
+blanket, Bedding
+blinker, Vehicle Part
+blizzard, Weather
+block, Shape
+blood, Body Fluid
+blouse, Clothing
+blow, Action
+blowgun, Weapon
+blue, Color
+board, Material
+boat, Watercraft
+bobcat, Animal
+body, Anatomy
+bolt, Fastener
+bomb, Weapon
+bomber, Aircraft
+bone, Anatomy
+bongo, Musical Instrument
+bonsai, Plant
+book, Literature
+bookcase, Furniture
+booklet, Publication
+boot, Footwear
+border, Boundary
+botany, Science
+bottle, Container
+bottom, Position
+boundary, Limit
+bow, Weapon
+bowl, Container
+bowling, Sport
+box, Container
+boy, Gender
+bra, Undergarment
+brace, Support
+bracket, Punctuation
+brain, Organ
+brake, Vehicle Part
+branch, Tree Part
+brand, Marketing
+brandy, Alcohol
+brass, Metal
+brazil, Country
+bread, Food
+break, Pause
+breakfast, Meal
+breath, Respiration
+brian, Name
+brick, Building Material
+bridge, Structure
+british, Nationality
+broccoli, Vegetable
+brochure, Publication
+broker, Profession
+bronze, Metal
+brother, Family Relation
+brother-in-law, Family Relation
+brow, Facial Feature
+brown, Color
+brush, Tool
+bubble, Physics
+bucket, Container
+budget, Finance
+buffer, Computer Term
+buffet, Meal Service
+bugle, Musical Instrument
+building, Structure
+bulb, Light Source
+bull, Animal
+bulldozer, Construction Equipment
+bumper, Vehicle Part
+bun, Hairstyle
+burglar, Criminal
+burma, Country
+burn, Injury
+burst, Action
+bus, Vehicle
+bush, Plant
+business, Commerce
+butane, Chemical
+butcher, Profession
+butter, Food
+button, Fastener
+buzzard, Bird
+cabbage, Vegetable
+cabinet, Furniture
+cable, Wire
+cactus, Plant
+cafe, Establishment
+cake, Dessert
+calculator, Device
+calculus, Mathematics
+calendar, Time Management
+calf, Animal
+call, Communication
+camel, Animal
+camera, Device
+camp, Outdoor Activity
+can, Container
+canada, Country
+canadian, Nationality
+cancer, Disease
+candle, Light Source
+cannon, Weapon
+canoe, Watercraft
+canvas, Art Material
+cap, Headwear
+capital, City
+cappelletti, Food
+capricorn, Zodiac Sign
+captain, Rank
+caption, Text
+car, Vehicle
+caravan, Vehicle
+carbon, Element
+card, Paper Product
+cardboard, Material
+cardigan, Clothing
+care, Attention
+carnation, Flower
+carol, Music
+carp, Fish
+carpenter, Profession
+carriage, Vehicle
+carrot, Vegetable
+cart, Vehicle
+cartoon, Entertainment
+case, Container
+cast, Medical Device
+castanet, Musical Instrument
+cat, Animal
+catamaran, Watercraft
+caterpillar, Insect
+cathedral, Building
+catsup, Condiment
+cattle, Animal
+cauliflower, Vegetable
+cause, Reason
+caution, Warning
+cave, Geological Feature
+c-clamp, Tool
+cd, Storage Device
+ceiling, Building Part
+celery, Vegetable
+celeste, Musical Instrument
+cell, Biology
+cellar, Building Part
+cello, Musical Instrument
+celsius, Temperature Scale
+cement, Building Material
+cemetery, Location
+cent, Currency
+centimeter, Measurement
+century, Time Period
+ceramic, Material
+cereal, Food
+certification, Qualification
+chain, Object
+chair, Furniture
+chalk, Writing Tool
+chance, Probability
+change, Alteration
+channel, Communication
+character, Personality
+chard, Vegetable
+charles, Name
+chauffeur, Profession
+check, Payment Method
+cheek, Body Part
+cheese, Food
+cheetah, Animal
+chef, Profession
+chemistry, Science
+cheque, Payment Method
+cherries, Fruit
+cherry, Fruit
+chess, Game
+chest, Body Part
+chick, Baby Bird
+chicken, Bird
+chicory, Plant
+chief, Leader
+child, Young Person
+children, Young People
+chill, Temperature
+chime, Sound Device
+chimpanzee, Primate
+chin, Body Part
+china, Country
+chinese, Nationality
+chive, Herb
+chocolate, Food
+chord, Music
+christmas, Holiday
+christopher, Name
+chronometer, Timekeeping Device
+church, Religious Building
+cicada, Insect
+cinema, Entertainment Venue
+circle, Shape
+circulation, Distribution
+cirrus, Cloud Type
+citizenship, Legal Status
+city, Urban Area
+clam, Mollusk
+clarinet, Musical Instrument
+class, Education
+claus, Name
+clave, Musical Instrument
+clef, Music Notation
+clerk, Profession
+click, Sound
+client, Customer
+climb, Action
+clipper, Tool
+cloakroom, Room
+clock, Timekeeping Device
+close, Action
+closet, Storage Space
+cloth, Fabric
+cloud, Weather
+cloudy, Weather
+clover, Plant
+club, Organization
+clutch, Vehicle Part
+coach, Trainer
+coal, Fuel
+coast, Geographical Feature
+coat, Clothing
+cobweb, Spider Web
+cockroach, Insect
+cocktail, Beverage
+cocoa, Beverage
+cod, Fish
+coffee, Beverage
+coil, Object
+coin, Currency
+coke, Beverage
+cold, Temperature
+collar, Clothing Part
+college, Education
+collision, Accident
+colombia, Country
+colon, Punctuation
+colony, Settlement
+color, Visual Property
+colt, Young Horse
+column, Architecture
+columnist, Profession
+comb, Grooming Tool
+comfort, Feeling
+comic, Entertainment
+comma, Punctuation
+command, Instruction
+commission, Business
+committee, Group
+community, Social Group
+company, Business
+comparison, Evaluation
+competition, Contest
+competitor, Participant
+composer, Musician
+composition, Creation
+computer, Technology
+condition, State
+condor, Bird
+cone, Shape
+confirmation, Verification
+conga, Musical Instrument
+congo, Country
+conifer, Tree
+connection, Link
+consonant, Linguistics
+continent, Landmass
+control, Management
+cook, Profession
+cooking, Activity
+copper, Metal
+copy, Duplicate
+copyright, Legal Protection
+cord, String
+cork, Material
+cormorant, Bird
+corn, Vegetable
+cornet, Musical Instrument
+correspondent, Journalist
+cost, Price
+cotton, Fabric
+couch, Furniture
+cougar, Animal
+cough, Medical Symptom
+country, Nation
+course, Education
+court, Legal Institution
+cousin, Family Relation
+cover, Protection
+cow, Animal
+cowbell, Musical Instrument
+crab, Crustacean
+crack, Damage
+cracker, Food
+craftsman, Skilled Worker
+crate, Container
+crawdad, Crustacean
+crayfish, Crustacean
+crayon, Art Supply
+cream, Dairy Product
+creator, Originator
+creature, Living Being
+credit, Finance
+creditor, Finance
+creek, Water Body
+crib, Furniture
+cricket, Insect
+crime, Illegal Act
+criminal, Lawbreaker
+crocodile, Reptile
+crocus, Flower
+croissant, Pastry
+crook, Criminal
+crop, Agriculture
+cross, Symbol
+crow, Bird
+crowd, Group
+crown, Headwear
+crush, Feeling
+cry, Emotion
+cub, Young Animal
+cuban, Nationality
+cucumber, Vegetable
+cultivator, Agricultural Tool
+cup, Container
+cupboard, Furniture
+cupcake, Dessert
+curler, Hair Tool
+currency, Money
+current, Flow
+curtain, Home Decor
+curve, Shape
+cushion, Furniture
+custard, Dessert
+customer, Buyer
+cut, Action
+cuticle, Anatomy
+cycle, Process
+cyclone, Weather
+cylinder, Shape
+cymbal, Musical Instrument
+dad, Family Relation
+daffodil, Flower
+dahlia, Flower
+daisy, Flower
+damage, Harm
+dance, Performance
+dancer, Performer
+danger, Threat
+daniel, Name
+dash, Punctuation
+dashboard, Vehicle Part
+database, Information Storage
+date, Time
+daughter, Family Relation
+david, Name
+day, Time Period
+dead, State
+deadline, Time Limit
+deal, Agreement
+death, End of Life
+deborah, Name
+debt, Finance
+debtor, Finance
+decade, Time Period
+december, Month
+decimal, Mathematics
+decision, Choice
+decrease, Reduction
+dedication, Commitment
+deer, Animal
+defense, Protection
+deficit, Finance
+degree, Measurement
+delete, Action
+delivery, Service
+den, Room
+denim, Fabric
+dentist, Profession
+deodorant, Hygiene Product
+department, Organization Division
+deposit, Finance
+description, Explanation
+desert, Geographical Feature
+design, Plan
+desire, Want
+desk, Furniture
+dessert, Food
+destruction, Damage
+detail, Information
+detective, Profession
+development, Growth
+dew, Weather
+diamond, Gemstone
+diaphragm, Anatomy
+dibble, Gardening Tool
+dictionary, Reference Book
+dietician, Profession
+difference, Dissimilarity
+digestion, Biological Process
+digger, Construction Equipment
+digital, Technology
+dill, Herb
+dime, Currency
+dimple, Facial Feature
+dinghy, Boat
+dinner, Meal
+dinosaur, Extinct Animal
+diploma, Certificate
+dipstick, Automotive Tool
+direction, Guidance
+dirt, Soil
+disadvantage, Drawback
+discovery, Finding
+discussion, Conversation
+disease, Medical Condition
+disgust, Emotion
+dish, Kitchenware
+distance, Measurement
+distribution, Allocation
+distributor, Business
+diving, Sport
+division, Mathematics
+dock, Maritime Structure
+doctor, Profession
+dog, Animal
+dogsled, Transportation
+doll, Toy
+dollar, Currency
+dolphin, Marine Mammal
+domain, Internet
+donald, Name
+donkey, Animal
+donna, Name
+door, Building Component
+dorothy, Name
+double, Quantity
+doubt, Uncertainty
+downtown, Urban Area
+dragon, Mythical Creature
+dragonfly, Insect
+drain, Plumbing
+drake, Male Duck
+drama, Performance
+draw, Action
+drawbridge, Bridge Type
+drawer, Furniture Part
+dream, Mental State
+dredger, Machine
+dress, Clothing
+dresser, Furniture
+dressing, Condiment
+drill, Tool
+drink, Beverage
+drive, Action
+driver, Profession
+driving, Activity
+drizzle, Weather
+drop, Liquid
+drug, Medicine
+drum, Musical Instrument
+dry, State
+dryer, Appliance
+duck, Bird
+duckling, Baby Duck
+dugout, Sports Structure
+dungeon, Building
+dust, Particles
+eagle, Bird
+ear, Body Part
+earth, Planet
+earthquake, Natural Disaster
+ease, Comfort
+east, Direction
+edge, Boundary
+edger, Gardening Tool
+editor, Profession
+editorial, Opinion Piece
+education, Learning
+edward, Name
+eel, Fish
+effect, Result
+egg, Food
+eggnog, Beverage
+eggplant, Vegetable
+egypt, Country
+eight, Number
+elbow, Body Part
+element, Basic Substance
+elephant, Animal
+elizabeth, Name
+ellipse, Shape
+emery, Abrasive
+employee, Worker
+employer, Business
+encyclopedia, Reference Book
+end, Conclusion
+enemy, Adversary
+energy, Power
+engine, Machine
+engineer, Profession
+engineering, Field of Study
+english, Language
+enquiry, Question
+entrance, Opening
+environment, Surroundings
+epoch, Time Period
+epoxy, Adhesive
+equinox, Astronomical Event
+equipment, Tools
+era, Time Period
+error, Mistake
+estimate, Approximation
+ethernet, Network Technology
+ethiopia, Country
+euphonium, Musical Instrument
+europe, Continent
+evening, Time of Day
+event, Occurrence
+examination, Test
+example, Illustration
+exchange, Trade
+exclamation, Expression
+exhaust, Vehicle Part
+ex-husband, Family Relation
+existence, Philosophy
+expansion, Growth
+experience, Life Event
+expert, Professional
+explanation, Communication
+ex-wife, Family Relation
+eye, Body Part
+eyebrow, Facial Feature
+eyelash, Body Part
+eyeliner, Cosmetic
+face, Body Part
+facilities, Infrastructure
+fact, Information
+factory, Building
+fahrenheit, Temperature Scale
+fairies, Mythical Creature
+fall, Season
+family, Social Unit
+fan, Device
+fang, Animal Body Part
+farm, Agriculture
+farmer, Profession
+fat, Nutrient
+father, Family Relation
+father-in-law, Family Relation
+faucet, Plumbing Fixture
+fear, Emotion
+feast, Celebration
+feather, Animal Body Part
+feature, Characteristic
+february, Month
+fedelini, Pasta
+feedback, Communication
+feeling, Emotion
+feet, Body Part
+felony, Crime
+female, Gender
+fender, Vehicle Part
+ferry, Transportation
+ferryboat, Watercraft
+fertilizer, Agricultural Product
+fiber, Material
+fiberglass, Material
+fibre, Material
+fiction, Literature
+field, Area
+fifth, Ordinal Number
+fight, Conflict
+fighter, Combatant
+file, Tool
+find, Discovery
+fine, Penalty
+finger, Body Part
+fir, Tree
+fire, Element
+fireman, Profession
+fireplace, Home Feature
+firewall, Computer Security
+fish, Animal
+fisherman, Profession
+flag, Symbol
+flame, Fire
+flare, Light Signal
+flat, Housing
+flavor, Taste
+flax, Plant
+flesh, Body Tissue
+flight, Travel
+flock, Group of Animals
+flood, Natural Disaster
+floor, Building Component
+flower, Plant
+flugelhorn, Musical Instrument
+flute, Musical Instrument
+fly, Insect
+foam, Material
+fog, Weather
+fold, Action
+font, Typography
+food, Nourishment
+foot, Body Part
+football, Sport
+footnote, Writing Element
+force, Physics
+forecast, Prediction
+forehead, Body Part
+forest, Ecosystem
+forgery, Crime
+fork, Utensil
+form, Document
+format, Structure
+fortnight, Time Period
+foundation, Base
+fountain, Water Feature
+fowl, Bird
+fox, Animal
+foxglove, Plant
+fragrance, Scent
+frame, Structure
+france, Country
+freckle, Skin Feature
+freeze, Temperature Change
+freezer, Appliance
+freighter, Ship
+french, Nationality
+freon, Chemical
+friction, Physics
+friday, Day of Week
+fridge, Appliance
+friend, Relationship
+frog, Amphibian
+front, Position
+frost, Weather Phenomenon
+frown, Facial Expression
+fruit, Food
+fuel, Energy Source
+fur, Animal Covering
+furniture, Home Item
+galley, Nautical Term
+gallon, Measurement
+game, Activity
+gander, Animal
+garage, Building
+garden, Outdoor Space
+garlic, Food
+gas, Fuel
+gasoline, Fuel
+gate, Structure
+gateway, Entrance
+gauge, Measurement Tool
+gazelle, Animal
+gear, Equipment
+gearshift, Vehicle Part
+geese, Animal
+gemini, Zodiac Sign
+gender, Social Category
+geography, Science
+geology, Science
+geometry, Mathematics
+george, Name
+geranium, Plant
+german, Nationality
+germany, Country
+ghana, Country
+ghost, Mythical Creature
+giant, Mythical Creature
+giraffe, Animal
+girdle, Clothing Item
+girl, Gender Category
+gladiolus, Plant
+glass, Material
+glider, Aircraft Type
+gliding, Sport
+glockenspiel, Musical Instrument
+glove, Clothing Item
+glue, Adhesive
+goal, Objective
+goat, Animal
+gold, Metal
+goldfish, Fish
+golf, Sport
+gondola, Watercraft
+gong, Musical Instrument
+good-bye, Farewell
+goose, Bird
+gore-tex, Fabric
+gorilla, Primate
+gosling, Young Bird
+government, Institution
+governor, Political Role
+grade, Education Level
+grain, Agriculture
+gram, Measurement Unit
+granddaughter, Family Relation
+grandfather, Family Relation
+grandmother, Family Relation
+grandson, Family Relation
+grape, Fruit
+graphic, Visual Art
+grass, Plant
+grasshopper, Insect
+gray, Color
+grease, Lubricant
+great-grandfather, Family Relation
+great-grandmother, Family Relation
+greece, Country
+greek, Nationality
+green, Color
+grenade, Weapon
+grey, Color
+grill, Cooking Equipment
+grip, Tool
+ground, Surface
+group, Collection
+grouse, Bird
+growth, Development
+guarantee, Assurance
+guatemalan, Nationality
+guide, Reference
+guilty, Legal Term
+guitar, Musical Instrument
+gum, Food
+gun, Weapon
+gym, Facility
+gymnast, Athlete
+hacksaw, Tool
+hail, Weather
+hair, Body Part
+haircut, Grooming
+half-brother, Family Relation
+half-sister, Family Relation
+halibut, Fish
+hall, Room
+hallway, Building Part
+hamburger, Food
+hammer, Tool
+hamster, Pet
+hand, Body Part
+handball, Sport
+handicap, Disability
+handle, Tool Part
+handsaw, Tool
+harbor, Maritime Structure
+hardboard, Building Material
+hardcover, Book Format
+hardhat, Safety Equipment
+hardware, Equipment
+harmonica, Musical Instrument
+harmony, Music
+harp, Musical Instrument
+hat, Clothing
+hate, Emotion
+hawk, Bird
+head, Body Part
+headlight, Vehicle Part
+headline, News
+health, Medical
+hearing, Sense
+heart, Organ
+heat, Temperature
+heaven, Religious Concept
+hedge, Plant
+height, Measurement
+helen, Name
+helicopter, Aircraft
+helium, Element
+hell, Religious Concept
+helmet, Safety Equipment
+help, Assistance
+hemp, Plant
+hen, Bird
+heron, Bird
+herring, Fish
+hexagon, Shape
+hill, Geographical Feature
+himalayan, Cat Breed
+hip, Body Part
+hippopotamus, Animal
+history, Academic Subject
+hobbies, Activities
+hockey, Sport
+hoe, Garden Tool
+hole, Opening
+holiday, Time Off
+home, Dwelling
+honey, Food
+hood, Car Part
+hook, Tool
+hope, Emotion
+horn, Musical Instrument
+horse, Animal
+hose, Tool
+hospital, Medical Facility
+hot, Temperature
+hour, Time Unit
+hourglass, Time Device
+house, Building
+hovercraft, Vehicle
+hub, Center Point
+hubcap, Vehicle Part
+humidity, Weather
+humor, Entertainment
+hurricane, Weather
+hyacinth, Flower
+hydrant, Infrastructure
+hydrofoil, Watercraft
+hydrogen, Element
+hyena, Animal
+hygienic, Cleanliness
+ice, Frozen Water
+icebreaker, Ship
+icicle, Ice Formation
+icon, Symbol
+idea, Thought
+ikebana, Art Form
+illegal, Law
+imprisonment, Punishment
+improvement, Progress
+impulse, Psychology
+inch, Measurement
+income, Finance
+increase, Change
+index, Reference
+india, Country
+indonesia, Country
+industry, Business
+ink, Writing Material
+innocent, Legal Term
+input, Data Entry
+insect, Bug
+instruction, Education
+instrument, Tool
+insulation, Building Material
+insurance, Financial Service
+interactive, Technology
+interest, Finance
+internet, Technology
+interviewer, Profession
+intestine, Body Part
+invention, Creation
+inventory, Business
+invoice, Business Document
+iran, Country
+iraq, Country
+iris, Flower
+iron, Metal
+island, Geography
+israel, Country
+italian, Nationality
+italy, Country
+jacket, Clothing
+jaguar, Animal
+jail, Facility
+jam, Food
+james, Name
+january, Month
+japan, Country
+japanese, Nationality
+jar, Container
+jasmine, Flower
+jason, Name
+jaw, Body Part
+jeans, Clothing
+jeep, Vehicle
+jeff, Name
+jelly, Food
+jellyfish, Marine Animal
+jennifer, Name
+jet, Aircraft
+jewel, Precious Stone
+jogging, Exercise
+john, Name
+join, Connection
+joke, Humor
+joseph, Name
+journey, Travel
+judge, Legal Profession
+judo, Martial Art
+juice, Beverage
+july, Month
+jumbo, Size
+jump, Action
+jumper, Clothing
+june, Month
+jury, Legal System
+justice, Legal Concept
+jute, Fiber
+kale, Vegetable
+kamikaze, Military Term
+kangaroo, Animal
+karate, Martial Art
+karen, Name
+kayak, Watercraft
+kendo, Martial Art
+kenneth, Name
+kenya, Country
+ketchup, Condiment
+kettle, Kitchen Appliance
+kettledrum, Musical Instrument
+kevin, Name
+key, Tool
+keyboard, Input Device
+keyboarding, Skill
+kick, Action
+kidney, Organ
+kilogram, Weight Unit
+kilometer, Distance Unit
+kimberly, Name
+kiss, Affection
+kitchen, Room
+kite, Toy
+kitten, Young Cat
+kitty, Cat
+knee, Body Part
+knickers, Clothing
+knife, Utensil
+knight, Medieval Role
+knot, Fastening
+knowledge, Information
+kohlrabi, Vegetable
+korean, Nationality
+laborer, Profession
+lace, Fabric
+ladybug, Insect
+lake, Body of Water
+lamb, Animal
+lamp, Lighting Device
+lan, Network Technology
+land, Geography
+landmine, Weapon
+language, Communication
+larch, Tree
+lasagna, Food
+latency, Technology Term
+latex, Material
+lathe, Tool
+laugh, Expression
+laundry, Household Task
+laura, Name
+law, Legal System
+lawyer, Profession
+layer, Structure
+lead, Metal
+leaf, Plant Part
+learning, Education
+leather, Material
+leek, Vegetable
+leg, Body Part
+legal, Law
+lemonade, Beverage
+lentil, Food
+leo, Zodiac Sign
+leopard, Animal
+letter, Communication
+lettuce, Vegetable
+level, Measurement
+libra, Zodiac Sign
+library, Building
+license, Document
+lier, Person
+lift, Device
+light, Illumination
+lightning, Weather
+lilac, Flower
+lily, Flower
+limit, Boundary
+linda, Name
+line, Shape
+linen, Fabric
+link, Connection
+lion, Animal
+lip, Body Part
+lipstick, Cosmetic
+liquid, Matter State
+liquor, Beverage
+lisa, Name
+list, Organization
+literature, Arts
+litter, Waste
+liver, Organ
+lizard, Reptile
+llama, Animal
+loaf, Food
+loan, Finance
+lobster, Crustacean
+lock, Security Device
+locket, Jewelry
+locust, Insect
+look, Action
+loss, Result
+lotion, Cosmetic
+love, Emotion
+low, Position
+lumber, Building Material
+lunch, Meal
+lunchroom, Room
+lung, Organ
+lunge, Movement
+lute, Musical Instrument
+lycra, Fabric
+lynx, Animal
+lyocell, Fabric
+lyre, Musical Instrument
+lyric, Music
+macaroni, Food
+machine, Device
+macrame, Craft
+magazine, Publication
+magic, Entertainment
+magician, Profession
+maid, Profession
+mail, Communication
+mailbox, Container
+mailman, Profession
+makeup, Cosmetic
+malaysia, Country
+male, Gender
+mall, Shopping Venue
+mallet, Tool
+man, Gender
+manager, Profession
+mandolin, Musical Instrument
+manicure, Beauty Treatment
+manx, Cat Breed
+map, Navigation Tool
+maple, Tree
+maraca, Musical Instrument
+marble, Material
+march, Month
+margaret, Name
+margin, Space
+maria, Name
+marimba, Musical Instrument
+mark, Symbol
+market, Commerce
+mary, Name
+mascara, Cosmetic
+mask, Accessory
+mass, Physics
+match, Tool
+math, Academic Subject
+mattock, Tool
+may, Month
+mayonnaise, Condiment
+meal, Food
+measure, Action
+meat, Food
+mechanic, Profession
+medicine, Healthcare
+meeting, Gathering
+melody, Music
+memory, Cognition
+men, Gender Group
+menu, Food List
+mercury, Element
+message, Communication
+metal, Material
+meteorology, Science
+meter, Measurement
+methane, Chemical
+mexican, Nationality
+mexico, Country
+mice, Animal
+michael, Name
+michelle, Name
+microwave, Appliance
+middle, Position
+mile, Measurement
+milk, Beverage
+milkshake, Beverage
+millennium, Time Period
+millimeter, Measurement
+millisecond, Time Unit
+mimosa, Plant
+mind, Cognition
+mine, Resource Site
+minibus, Vehicle
+mini-skirt, Clothing
+minister, Profession
+mint, Plant
+minute, Time Unit
+mirror, Object
+missile, Weapon
+mist, Weather
+mistake, Error
+mitten, Clothing
+moat, Architecture
+modem, Technology
+mole, Animal
+mom, Family Relation
+monday, Day of Week
+money, Currency
+monkey, Animal
+month, Time Unit
+moon, Celestial Body
+morning, Time of Day
+morocco, Country
+mosque, Religious Building
+mosquito, Insect
+mother, Family Relation
+mother-in-law, Family Relation
+motion, Physics
+motorboat, Vehicle
+motorcycle, Vehicle
+mountain, Geography
+mouse, Animal
+moustache, Facial Hair
+mouth, Body Part
+move, Action
+multi-hop, Network Term
+multimedia, Technology
+muscle, Anatomy
+museum, Building
+music, Art Form
+musician, Profession
+mustard, Condiment
+myanmar, Country
+nail, Tool
+name, Identity
+nancy, Name
+napkin, Household Item
+narcissus, Flower
+nation, Political Entity
+neck, Body Part
+need, Requirement
+needle, Tool
+neon, Element
+nepal, Country
+nephew, Family Relation
+nerve, Anatomy
+nest, Animal Home
+net, Tool
+network, Technology
+news, Information
+newsprint, Publication
+newsstand, Retail
+nic, Technology
+nickel, Element
+niece, Family Relation
+nigeria, Country
+night, Time Period
+nitrogen, Element
+node, Technology
+noise, Sound
+noodle, Food
+north, Direction
+north america, Continent
+north korea, Country
+norwegian, Nationality
+nose, Body Part
+note, Communication
+notebook, Stationery
+notify, Communication
+novel, Literature
+november, Month
+number, Mathematics
+numeric, Mathematics
+nurse, Profession
+nut, Food
+nylon, Material
+oak, Tree
+oatmeal, Food
+objective, Goal
+oboe, Musical Instrument
+observation, Action
+occupation, Profession
+ocean, Body of Water
+ocelot, Animal
+octagon, Shape
+octave, Music
+october, Month
+octopus, Animal
+odometer, Measurement Device
+offence, Legal Term
+offer, Business
+office, Workplace
+oil, Liquid
+okra, Vegetable
+olive, Food
+onion, Vegetable
+open, State
+opera, Performance
+operation, Action
+ophthalmologist, Medical Profession
+opinion, Thought
+option, Choice
+orange, Fruit
+orchestra, Music Group
+orchid, Flower
+order, Arrangement
+organ, Musical Instrument
+organisation, Structure
+organization, Structure
+ornament, Decoration
+ostrich, Bird
+otter, Animal
+ounce, Measurement
+output, Result
+outrigger, Boat Part
+oval, Shape
+oven, Appliance
+overcoat, Clothing
+owl, Bird
+owner, Person
+ox, Animal
+oxygen, Element
+oyster, Seafood
+package, Container
+packet, Container
+page, Paper
+pail, Container
+pain, Sensation
+paint, Art Supply
+pair, Quantity
+pajama, Clothing
+pakistan, Country
+palm, Tree
+pamphlet, Publication
+pan, Cookware
+pancake, Food
+pancreas, Organ
+panda, Animal
+pansy, Flower
+panther, Animal
+panties, Clothing
+pantry, Room
+pants, Clothing
+panty, Clothing
+pantyhose, Clothing
+paper, Material
+paperback, Book Format
+parade, Event
+parallelogram, Shape
+parcel, Package
+parent, Family Relation
+parentheses, Punctuation
+park, Public Space
+parrot, Bird
+parsnip, Vegetable
+part, Component
+particle, Matter
+partner, Relationship
+partridge, Bird
+party, Social Event
+passbook, Financial Document
+passenger, Traveler
+passive, State
+pasta, Food
+paste, Adhesive
+pastor, Religious Role
+pastry, Food
+patch, Repair
+path, Route
+patient, Medical Term
+patio, Architecture
+patricia, Name
+paul, Name
+payment, Transaction
+pea, Vegetable
+peace, State
+peak, Geography
+peanut, Food
+pear, Fruit
+pedestrian, Person
+pediatrician, Medical Profession
+peen, Tool Part
+peer-to-peer, Technology
+pelican, Bird
+pen, Writing Tool
+penalty, Punishment
+pencil, Writing Tool
+pendulum, Physics Device
+pentagon, Shape
+peony, Flower
+pepper, Spice
+perch, Fish
+perfume, Fragrance
+period, Time Unit
+periodical, Publication
+peripheral, Computer Hardware
+permission, Authorization
+persian, Cat Breed
+person, Human
+peru, Country
+pest, Nuisance
+pet, Animal Companion
+pharmacist, Profession
+pheasant, Bird
+philippines, Country
+philosophy, Academic Field
+phone, Communication Device
+physician, Medical Profession
+piano, Musical Instrument
+piccolo, Musical Instrument
+pickle, Food
+picture, Visual Art
+pie, Food
+pig, Animal
+pigeon, Bird
+pike, Fish
+pillow, Bedding
+pilot, Profession
+pimple, Skin Condition
+pin, Fastener
+pine, Tree
+ping, Technology Term
+pink, Color
+pint, Measurement
+pipe, Tool
+pisces, Zodiac Sign
+pizza, Food
+place, Location
+plain, Geography
+plane, Aircraft
+planet, Celestial Body
+plant, Living Organism
+plantation, Agriculture
+plaster, Building Material
+plasterboard, Construction Material
+plastic, Material
+plate, Dishware
+platinum, Metal
+play, Activity
+playground, Recreation Area
+playroom, Room
+pleasure, Emotion
+plier, Tool
+plot, Story Element
+plough, Farm Tool
+plow, Farm Tool
+plywood, Building Material
+pocket, Clothing Part
+poet, Profession
+point, Location
+poison, Harmful Substance
+poland, Country
+police, Law Enforcement
+policeman, Profession
+polish, Cleaning Product
+politician, Profession
+pollution, Environmental Issue
+polo, Sport
+polyester, Fabric
+pond, Body of Water
+popcorn, Food
+poppy, Flower
+population, Demographics
+porch, Architecture
+porcupine, Animal
+port, Maritime Structure
+porter, Profession
+position, Location
+possibility, Concept
+postage, Mail Service
+postbox, Mail Container
+pot, Container
+potato, Vegetable
+poultry, Food
+pound, Weight Unit
+powder, Substance
+power, Energy
+precipitation, Weather
+preface, Book Part
+pressure, Physics
+price, Value
+priest, Religious Role
+print, Output
+printer, Device
+prison, Facility
+probation, Legal Term
+process, Procedure
+processing, Action
+produce, Food
+product, Item
+production, Manufacturing
+professor, Profession
+profit, Finance
+promotion, Career
+propane, Fuel
+property, Possession
+prose, Literature
+prosecution, Legal Term
+protest, Political Action
+protocol, Procedure
+pruner, Garden Tool
+psychiatrist, Medical Profession
+psychology, Science
+ptarmigan, Bird
+puffin, Bird
+pull, Action
+puma, Animal
+pump, Device
+pumpkin, Vegetable
+punch, Action
+punishment, Consequence
+puppy, Young Dog
+purchase, Transaction
+purple, Color
+purpose, Goal
+push, Action
+pvc, Material
+pyjama, Clothing
+pyramid, Structure
+quail, Bird
+quality, Characteristic
+quart, Measurement
+quarter, Currency
+quartz, Mineral
+queen, Royalty
+question, Inquiry
+quicksand, Natural Hazard
+quiet, Sound Level
+quill, Writing Tool
+quilt, Bedding
+quince, Fruit
+quit, Action
+quiver, Container
+quotation, Text
+oak, Tree
+oatmeal, Food
+objective, Goal
+oboe, Musical Instrument
+observation, Action
+occupation, Profession
+ocean, Body of Water
+ocelot, Animal
+octagon, Shape
+octave, Music
+october, Month
+octopus, Animal
+odometer, Measurement Device
+offence, Legal Term
+offer, Business
+office, Workplace
+oil, Liquid
+okra, Vegetable
+olive, Food
+onion, Vegetable
+open, State
+opera, Performance
+operation, Action
+ophthalmologist, Medical Profession
+opinion, Thought
+option, Choice
+orange, Fruit
+orchestra, Music Group
+orchid, Flower
+order, Arrangement
+organ, Musical Instrument
+organisation, Structure
+organization, Structure
+ornament, Decoration
+ostrich, Bird
+otter, Animal
+ounce, Measurement
+output, Result
+outrigger, Boat Part
+oval, Shape
+oven, Appliance
+overcoat, Clothing
+owl, Bird
+owner, Person
+ox, Animal
+oxygen, Element
+oyster, Seafood
+package, Container
+packet, Container
+page, Paper
+pail, Container
+pain, Sensation
+paint, Art Supply
+pair, Quantity
+pajama, Clothing
+pakistan, Country
+palm, Tree
+pamphlet, Publication
+pan, Cookware
+pancake, Food
+pancreas, Organ
+panda, Animal
+pansy, Flower
+panther, Animal
+panties, Clothing
+pantry, Room
+pants, Clothing
+panty, Clothing
+pantyhose, Clothing
+paper, Material
+paperback, Book Format
+parade, Event
+parallelogram, Shape
+parcel, Package
+parent, Family Relation
+parentheses, Punctuation
+park, Public Space
+parrot, Bird
+parsnip, Vegetable
+part, Component
+particle, Matter
+partner, Relationship
+partridge, Bird
+party, Social Event
+passbook, Financial Document
+passenger, Traveler
+passive, State
+pasta, Food
+paste, Adhesive
+pastor, Religious Role
+pastry, Food
+patch, Repair
+path, Route
+patient, Medical Term
+patio, Architecture
+patricia, Name
+paul, Name
+payment, Transaction
+pea, Vegetable
+peace, State
+peak, Geography
+peanut, Food
+pear, Fruit
+pedestrian, Person
+pediatrician, Medical Profession
+peen, Tool Part
+peer-to-peer, Technology
+pelican, Bird
+pen, Writing Tool
+penalty, Punishment
+pencil, Writing Tool
+pendulum, Physics Device
+pentagon, Shape
+peony, Flower
+pepper, Spice
+perch, Fish
+perfume, Fragrance
+period, Time Unit
+periodical, Publication
+peripheral, Computer Hardware
+permission, Authorization
+persian, Cat Breed
+person, Human
+peru, Country
+pest, Nuisance
+pet, Animal Companion
+pharmacist, Profession
+pheasant, Bird
+philippines, Country
+philosophy, Academic Field
+phone, Communication Device
+physician, Medical Profession
+piano, Musical Instrument
+piccolo, Musical Instrument
+pickle, Food
+picture, Visual Art
+pie, Food
+pig, Animal
+pigeon, Bird
+pike, Fish
+pillow, Bedding
+pilot, Profession
+pimple, Skin Condition
+pin, Fastener
+pine, Tree
+ping, Technology Term
+pink, Color
+pint, Measurement
+pipe, Tool
+pisces, Zodiac Sign
+pizza, Food
+place, Location
+plain, Geography
+plane, Aircraft
+planet, Celestial Body
+plant, Living Organism
+plantation, Agriculture
+plaster, Building Material
+plasterboard, Construction Material
+plastic, Material
+plate, Dishware
+platinum, Metal
+play, Activity
+playground, Recreation Area
+playroom, Room
+pleasure, Emotion
+plier, Tool
+plot, Story Element
+plough, Farm Tool
+plow, Farm Tool
+plywood, Building Material
+pocket, Clothing Part
+poet, Profession
+point, Location
+poison, Harmful Substance
+poland, Country
+police, Law Enforcement
+policeman, Profession
+polish, Cleaning Product
+politician, Profession
+pollution, Environmental Issue
+polo, Sport
+polyester, Fabric
+pond, Body of Water
+popcorn, Food
+poppy, Flower
+population, Demographics
+porch, Architecture
+porcupine, Animal
+port, Maritime Structure
+porter, Profession
+position, Location
+possibility, Concept
+postage, Mail Service
+postbox, Mail Container
+pot, Container
+potato, Vegetable
+poultry, Food
+pound, Weight Unit
+powder, Substance
+power, Energy
+precipitation, Weather
+preface, Book Part
+pressure, Physics
+price, Value
+priest, Religious Role
+print, Output
+printer, Device
+prison, Facility
+probation, Legal Term
+process, Procedure
+processing, Action
+produce, Food
+product, Item
+production, Manufacturing
+professor, Profession
+profit, Finance
+promotion, Career
+propane, Fuel
+property, Possession
+prose, Literature
+prosecution, Legal Term
+protest, Political Action
+protocol, Procedure
+pruner, Garden Tool
+psychiatrist, Medical Profession
+psychology, Science
+ptarmigan, Bird
+puffin, Bird
+pull, Action
+puma, Animal
+pump, Device
+pumpkin, Vegetable
+punch, Action
+punishment, Consequence
+puppy, Young Dog
+purchase, Transaction
+purple, Color
+purpose, Goal
+push, Action
+pvc, Material
+pyjama, Clothing
+pyramid, Structure
+quail, Bird
+quality, Characteristic
+quart, Measurement
+quarter, Currency
+quartz, Mineral
+queen, Royalty
+question, Inquiry
+quicksand, Natural Hazard
+quiet, Sound Level
+quill, Writing Tool
+quilt, Bedding
+quince, Fruit
+quit, Action
+quiver, Container
+quotation, Text
+rabbi, Religious Role
+rabbit, Animal
+racing, Sport
+radar, Technology
+radiator, Vehicle Part
+radio, Electronic Device
+radish, Vegetable
+raft, Watercraft
+rail, Transportation
+railway, Transportation
+rain, Weather
+rainbow, Natural Phenomenon
+raincoat, Clothing
+rainstorm, Weather
+rake, Garden Tool
+ramie, Fiber
+random, Concept
+range, Measurement
+rat, Animal
+rate, Measurement
+raven, Bird
+ravioli, Food
+ray, Science
+rayon, Fabric
+reaction, Chemistry
+reading, Activity
+reason, Concept
+receipt, Document
+recess, Break Time
+record, Music
+recorder, Musical Instrument
+rectangle, Shape
+red, Color
+reduction, Change
+refrigerator, Appliance
+refund, Finance
+regret, Emotion
+reindeer, Animal
+relation, Connection
+relative, Family
+religion, Belief System
+relish, Condiment
+reminder, Memory Aid
+repair, Action
+replace, Action
+report, Document
+representative, Professional
+request, Communication
+resolution, Decision
+respect, Value
+responsibility, Duty
+rest, Action
+restaurant, Business
+result, Outcome
+retailer, Business
+revolve, Motion
+revolver, Weapon
+reward, Incentive
+rhinoceros, Animal
+rhythm, Music
+rice, Food
+richard, Name
+riddle, Puzzle
+rifle, Weapon
+ring, Jewelry
+rise, Movement
+risk, Concept
+river, Body of Water
+riverbed, Geography
+road, Infrastructure
+roadway, Infrastructure
+roast, Cooking Method
+robert, Name
+robin, Bird
+rock, Geology
+rocket, Vehicle
+rod, Tool
+roll, Movement
+romania, Country
+romanian, Nationality
+ronald, Name
+roof, Building Part
+room, Space
+rooster, Bird
+root, Plant Part
+rose, Flower
+rotate, Movement
+route, Path
+router, Technology
+rowboat, Watercraft
+rub, Action
+rubber, Material
+rugby, Sport
+rule, Regulation
+run, Action
+russia, Country
+russian, Nationality
+rutabaga, Vegetable
+ruth, Name
+sack, Container
+sagittarius, Zodiac Sign
+sail, Boat Part
+sailboat, Watercraft
+sailor, Profession
+salad, Food
+salary, Finance
+sale, Commerce
+salesman, Profession
+salmon, Fish
+salt, Seasoning
+sampan, Boat
+samurai, Warrior
+sand, Material
+sandra, Name
+sandwich, Food
+santa, Holiday Figure
+sarah, Name
+sardine, Fish
+satin, Fabric
+saturday, Day of Week
+sauce, Food
+saudi arabia, Country
+sausage, Food
+save, Action
+saw, Tool
+saxophone, Musical Instrument
+scale, Measurement
+scallion, Vegetable
+scanner, Device
+scarecrow, Farm Equipment
+scarf, Clothing
+scene, Theater
+scent, Smell
+schedule, Time Management
+school, Education
+science, Academic Field
+scissors, Tool
+scooter, Vehicle
+scorpio, Zodiac Sign
+scorpion, Animal
+scraper, Tool
+screen, Display
+screw, Fastener
+screwdriver, Tool
+sea, Body of Water
+seagull, Bird
+seal, Animal
+seaplane, Aircraft
+search, Action
+seashore, Geography
+season, Time Period
+seat, Furniture
+second, Time Unit
+secretary, Profession
+secure, Safety
+security, Protection
+seed, Plant Part
+seeder, Farm Tool
+segment, Part
+select, Choice
+selection, Choice
+self, Identity
+semicircle, Shape
+semicolon, Punctuation
+sense, Perception
+sentence, Language
+september, Month
+servant, Profession
+server, Technology
+session, Time Period
+sex, Biology
+shade, Light
+shadow, Light Effect
+shake, Movement
+shallot, Vegetable
+shame, Emotion
+shampoo, Hygiene Product
+shape, Form
+share, Action
+shark, Fish
+sharon, Name
+shears, Tool
+sheep, Animal
+sheet, Bedding
+shelf, Furniture
+shell, Animal Part
+shield, Protection
+shingle, Building Material
+ship, Watercraft
+shirt, Clothing
+shock, Reaction
+shoe, Footwear
+shoemaker, Profession
+shop, Business
+shorts, Clothing
+shoulder, Body Part
+shovel, Tool
+show, Entertainment
+shrimp, Seafood
+shrine, Religious Structure
+siamese, Cat Breed
+siberian, Cat Breed
+side, Position
+sideboard, Furniture
+sidecar, Vehicle Attachment
+sidewalk, Infrastructure
+sign, Communication
+signature, Writing
+silica, Mineral
+silk, Fabric
+silver, Metal
+sing, Action
+singer, Profession
+single, Relationship Status
+sink, Plumbing Fixture
+sister, Family Relation
+sister-in-law, Family Relation
+size, Measurement
+skate, Sport Equipment
+skiing, Sport
+skill, Ability
+skin, Body Part
+skirt, Clothing
+sky, Nature
+slash, Punctuation
+slave, Historical Term
+sled, Vehicle
+sleep, Activity
+sleet, Weather
+slice, Action
+slime, Substance
+slip, Movement
+slipper, Footwear
+slope, Geography
+smash, Action
+smell, Sense
+smile, Expression
+smoke, Substance
+snail, Animal
+snake, Animal
+sneeze, Action
+snow, Weather
+snowboarding, Sport
+snowflake, Weather
+snowman, Winter Creation
+snowplow, Vehicle
+snowstorm, Weather
+soap, Hygiene Product
+soccer, Sport
+society, Social Structure
+sociology, Science
+sock, Clothing
+soda, Beverage
+sofa, Furniture
+softball, Sport
+softdrink, Beverage
+software, Technology
+soil, Earth
+soldier, Military
+son, Family Relation
+song, Music
+soprano, Music
+sort, Organization
+sound, Physics
+soup, Food
+sousaphone, Musical Instrument
+south africa, Country
+south america, Continent
+south korea, Country
+soy, Food
+soybean, Plant
+space, Universe
+spade, Tool
+spaghetti, Food
+spain, Country
+spandex, Fabric
+spark, Electricity
+sparrow, Bird
+spear, Weapon
+specialist, Professional
+speedboat, Watercraft
+sphere, Shape
+sphynx, Cat Breed
+spider, Animal
+spike, Object
+spinach, Vegetable
+spleen, Organ
+sponge, Cleaning Tool
+spoon, Utensil
+spot, Location
+spring, Season
+sprout, Plant Growth
+spruce, Tree
+spy, Profession
+square, Shape
+squash, Sport
+squid, Sea Creature
+squirrel, Animal
+stage, Performance Space
+staircase, Architecture
+stamp, Postal Item
+star, Celestial Object
+start, Beginning
+starter, Food
+state, Government
+statement, Communication
+station, Location
+statistic, Mathematics
+steam, Gas
+steel, Metal
+stem, Plant Part
+step, Movement
+step-aunt, Family Relation
+step-brother, Family Relation
+stepdaughter, Family Relation
+step-daughter, Family Relation
+step-father, Family Relation
+step-grandfather, Family Relation
+step-grandmother, Family Relation
+stepmother, Family Relation
+step-mother, Family Relation
+step-sister, Family Relation
+stepson, Family Relation
+step-son, Family Relation
+step-uncle, Family Relation
+steven, Name
+stew, Food
+stick, Object
+stinger, Animal Part
+stitch, Sewing
+stock, Finance
+stocking, Clothing
+stomach, Body Part
+stone, Material
+stool, Furniture
+stop, Action
+stopsign, Traffic Control
+stopwatch, Timepiece
+store, Business
+storm, Weather
+story, Literature
+stove, Appliance
+stranger, Person
+straw, Object
+stream, Water Body
+street, Infrastructure
+streetcar, Transportation
+stretch, Action
+string, Object
+structure, Construction
+study, Education
+sturgeon, Fish
+submarine, Watercraft
+substance, Matter
+subway, Transportation
+success, Achievement
+sudan, Country
+suede, Material
+sugar, Food
+suggestion, Idea
+suit, Clothing
+summer, Season
+sun, Star
+sunday, Day of Week
+sundial, Timepiece
+sunflower, Plant
+sunshine, Weather
+supermarket, Business
+supply, Resource
+support, Aid
+surfboard, Sports Equipment
+surgeon, Medical Profession
+surname, Name
+surprise, Emotion
+susan, Name
+sushi, Food
+swallow, Bird
+swamp, Geography
+swan, Bird
+sweater, Clothing
+sweatshirt, Clothing
+sweatshop, Workplace
+swedish, Nationality
+sweets, Food
+swim, Action
+swimming, Sport
+swing, Equipment
+swiss, Nationality
+switch, Control Device
+sword, Weapon
+swordfish, Fish
+sycamore, Tree
+syria, Country
+syrup, Food
+system, Organization
+table, Furniture
+tablecloth, Home Item
+tabletop, Furniture Part
+tachometer, Measurement Device
+tadpole, Animal
+tail, Animal Part
+tailor, Profession
+taiwan, Country
+talk, Communication
+tank, Military Vehicle
+tanker, Ship
+tanzania, Country
+target, Object
+taste, Sense
+taurus, Zodiac Sign
+tax, Finance
+taxi, Transportation
+taxicab, Vehicle
+tea, Beverage
+teacher, Profession
+teaching, Education
+team, Group
+technician, Profession
+teeth, Body Part
+television, Device
+teller, Profession
+temper, Emotion
+temperature, Measurement
+temple, Religious Building
+tempo, Music
+tendency, Behavior
+tennis, Sport
+tenor, Music
+tent, Shelter
+territory, Land
+test, Evaluation
+text, Communication
+textbook, Education
+texture, Surface Quality
+thailand, Country
+theater, Entertainment Venue
+theory, Concept
+thermometer, Measurement Device
+thing, Object
+thistle, Plant
+thomas, Name
+thought, Cognition
+thread, Sewing
+thrill, Emotion
+throat, Body Part
+throne, Furniture
+thumb, Body Part
+thunder, Weather
+thunderstorm, Weather
+thursday, Day of Week
+ticket, Access Pass
+tie, Clothing
+tiger, Animal
+tights, Clothing
+tile, Building Material
+timbale, Musical Instrument
+time, Measurement
+timer, Device
+timpani, Musical Instrument
+tin, Metal
+tip, Money
+tire, Vehicle Part
+titanium, Metal
+title, Name
+toad, Animal
+toast, Food
+toe, Body Part
+toenail, Body Part
+toilet, Plumbing Fixture
+tomato, Vegetable
+tom-tom, Musical Instrument
+ton, Weight Unit
+tongue, Body Part
+tooth, Body Part
+toothbrush, Hygiene Item
+toothpaste, Hygiene Product
+top, Position
+tornado, Weather
+tortellini, Food
+tortoise, Animal
+touch, Sense
+tower, Structure
+town, Settlement
+toy, Entertainment Item
+tractor, Vehicle
+trade, Commerce
+traffic, Transportation
+trail, Path
+train, Transportation
+tramp, Person
+transaction, Business
+transmission, Vehicle Part
+transport, Movement
+trapezoid, Shape
+tray, Container
+treatment, Medical
+tree, Plant
+trial, Legal Process
+triangle, Shape
+trick, Deception
+trigonometry, Mathematics
+trip, Travel
+trombone, Musical Instrument
+trouble, Problem
+trousers, Clothing
+trout, Fish
+trowel, Tool
+truck, Vehicle
+trumpet, Musical Instrument
+trunk, Storage
+t-shirt, Clothing
+tsunami, Natural Disaster
+tub, Container
+tuba, Musical Instrument
+tuesday, Day of Week
+tugboat, Watercraft
+tulip, Flower
+tuna, Fish
+tune, Music
+turkey, Country
+turkish, Nationality
+turn, Movement
+turnip, Vegetable
+turnover, Food
+turret, Architecture
+turtle, Animal
+tv, Device
+twig, Plant Part
+twilight, Time of Day
+twine, String
+twist, Movement
+typhoon, Weather
+tyvek, Material
+uganda, Country
+ukraine, Country
+ukrainian, Nationality
+umbrella, Weather Protection
+uncle, Family Relation
+underclothes, Clothing
+underpants, Clothing
+undershirt, Clothing
+underwear, Clothing
+unit, Measurement
+united kingdom, Country
+use, Action
+utensil, Tool
+uzbekistan, Country
+vacation, Travel
+vacuum, Appliance
+valley, Geography
+value, Worth
+van, Vehicle
+vase, Container
+vault, Storage
+vegetable, Food
+vegetarian, Diet
+veil, Clothing
+vein, Anatomy
+velvet, Fabric
+venezuela, Country
+venezuelan, Nationality
+verdict, Legal Term
+vermicelli, Food
+verse, Poetry
+vessel, Container
+vest, Clothing
+veterinarian, Profession
+vibraphone, Musical Instrument
+vietnam, Country
+view, Sight
+vinyl, Material
+viola, Musical Instrument
+violet, Color
+violin, Musical Instrument
+virgo, Zodiac Sign
+viscose, Material
+vise, Tool
+vision, Sense
+visitor, Person
+voice, Sound
+volcano, Geography
+volleyball, Sport
+voyage, Travel
+vulture, Bird
+waiter, Profession
+waitress, Profession
+walk, Movement
+wall, Structure
+wallaby, Animal
+wallet, Accessory
+walrus, Animal
+war, Conflict
+warm, Temperature
+wash, Action
+washer, Appliance
+wasp, Insect
+waste, Garbage
+watch, Timepiece
+watchmaker, Profession
+water, Liquid
+waterfall, Geography
+wave, Physics
+wax, Material
+way, Path
+wealth, Finance
+weapon, Military
+weasel, Animal
+weather, Environment
+wedge, Tool
+wednesday, Day of Week
+weed, Plant
+weeder, Tool
+week, Time Unit
+weight, Measurement
+whale, Marine Mammal
+wheel, Machine Part
+whip, Tool
+whiskey, Beverage
+whistle, Sound Device
+white, Color
+wholesaler, Business
+whorl, Pattern
+wilderness, Nature
+william, Name
+willow, Tree
+wind, Weather
+windchime, Decoration
+window, Building Part
+windscreen, Vehicle Part
+windshield, Vehicle Part
+wine, Beverage
+wing, Animal Part
+winter, Season
+wire, Material
+wish, Desire
+witch, Mythical Being
+withdrawal, Finance
+witness, Legal Term
+wolf, Animal
+woman, Gender
+women, Gender Group
+wood, Material
+wool, Material
+woolen, Fabric
+word, Language
+work, Activity
+workshop, Education
+worm, Animal
+wound, Injury
+wrecker, Vehicle
+wren, Bird
+wrench, Tool
+wrinkle, Skin Feature
+wrist, Body Part
+writer, Profession
+xylophone, Musical Instrument
+yacht, Watercraft
+yak, Animal
+yam, Vegetable
+yard, Measurement
+yarn, Craft Material
+year, Time Unit
+yellow, Color
+yew, Tree
+yogurt, Food
+yoke, Farm Equipment
+yugoslavian, Nationality
+zebra, Animal
+zephyr, Wind
+zinc, Metal
+zipper, Fastener
+zone, Area
+zoo, Facility
+zoology, Science
