@@ -2,26 +2,41 @@ import greenfoot.*;
 
 public class EndScreen extends World{
     Label titleLabel; 
-    boolean isWin;
+    Label wordLabel;
+
     Face face;
     Button musicButton;
-    
-    public EndScreen(boolean isWin, Face face, Button musicButton) 
+
+    private char[] trueword; 
+
+    public EndScreen(Face face, Button musicButton, char[] word) 
     {
         super(600, 400, 1);
         this.face = face;
         this.musicButton = musicButton;
+        trueword = word;
         
         setBackground("images/black-background.jpg");
         
-        titleLabel = new Label("YOU LOST", 60);
-        
-        
+        titleLabel = new Label("YOU LOST", 60);        
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
+
+        wordLabel = new Label("",30);
+        wordLabel(trueword);
+        addObject(wordLabel, getWidth() / 2, 300);
         
         fontColor();
-        
         fireworks();
+    }
+
+    private void wordLabel(char[] word) {
+        // Add a space between each character in the word for spacing
+        String wordString = "";
+        for (int i = 0; i < word.length; i++) {
+            wordString += word[i];
+        }
+
+        wordLabel.setValue("Correct word: " + wordString);
     }
     
     public void CreateNextRoundButton()

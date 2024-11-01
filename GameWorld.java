@@ -142,7 +142,7 @@ public class GameWorld extends World {
           
            // Create game end screen
             isWin = false;
-            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
             Greenfoot.setWorld(newScreen);
           
         }
