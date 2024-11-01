@@ -14,7 +14,7 @@ public class GameWorld extends World {
 
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
-    //private boolean isWin = false;
+    private int timer = 1000;
 
     Face face;
     Button musicButton;
@@ -67,9 +67,19 @@ public class GameWorld extends World {
     }
 
     public void act() {
+        //testTimer();
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
+        //Greenfoot.delay(45);
+        //timer--;
     }
+    
+    //private void testTimer() {
+        //Label l = new Label(timer, 50);
+        //removeObject(l);
+        //addObject(l, getWidth() / 2, getHeight() / 2);
+        
+    //}
 
     private void updateWordLabel(char[] word) {
         // Add a space between each character in the word for spacing
