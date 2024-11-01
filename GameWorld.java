@@ -64,6 +64,9 @@ public class GameWorld extends World {
         addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
+        
+        //clear any previous keys input
+        Greenfoot.getKey();
     }
 
     public void act() {
@@ -120,7 +123,7 @@ public class GameWorld extends World {
     private void createHangman() {
         if(incorrect == 1 ) {
             HangmanHead head = new HangmanHead();
-            addObject(head, 500, 305);
+            addObject(head, 500, 305); 
         } else if (incorrect == 2) {
             HangmanBodyParts body = new HangmanBodyParts("body", false);
             addObject(body, 570, 408);
