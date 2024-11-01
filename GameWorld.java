@@ -20,6 +20,7 @@ public class GameWorld extends World {
     
 
     public GameWorld(Face face, Button musicButton) {
+
         super(1000, 600, 1);
         this.face = face;
         this.musicButton = musicButton;
@@ -99,7 +100,6 @@ public class GameWorld extends World {
             {
                 incorrect++;
                 createHangman();
-         
             }
             
             alphabetMap.get(letter.charAt(0)).guess();
@@ -186,8 +186,7 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            isWin = true;
-            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
+            NextRoundScreen newScreen = new NextRoundScreen();
             Greenfoot.setWorld(newScreen);
         }
     }
