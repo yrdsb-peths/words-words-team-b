@@ -13,10 +13,18 @@ public class NextRoundScreen extends World
      * Constructor for objects of class NextRound.
      * 
      */
-    public NextRoundScreen()
+    Face face;
+    Button musicButton;
+
+    public NextRoundScreen(Face face, Button musicButton)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        this.face = face;
+        this.musicButton = musicButton;
+        
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 40);
         
         CreateNextRoundButton();
     }
@@ -30,6 +38,7 @@ public class NextRoundScreen extends World
     
     public void nextRound()
     {
-        Greenfoot.setWorld(new GameWorld());
+        Greenfoot.setWorld(new GameWorld(face, musicButton));
     }
+    
 }
