@@ -19,16 +19,10 @@ public class GameWorld extends World {
     Face face;
     Button musicButton;
     
-<<<<<<< HEAD
     private static int score = 0;
     private static int highScore = 0;
-    
-    public GameWorld() {
-=======
-
+   
     public GameWorld(Face face, Button musicButton) {
-
->>>>>>> 6d2f1049d0b2c6fda5fe265b3b1830974f98a303
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
         this.face = face;
@@ -202,14 +196,10 @@ public class GameWorld extends World {
             }
         }
         
-        if(count == trueWord.length)
+        if (count == trueWord.length)
         {
-<<<<<<< HEAD
             score++;
-            NextRoundScreen newScreen = new NextRoundScreen();
-=======
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
->>>>>>> 6d2f1049d0b2c6fda5fe265b3b1830974f98a303
             Greenfoot.setWorld(newScreen);
         }
     }
