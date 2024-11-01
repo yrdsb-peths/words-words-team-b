@@ -138,7 +138,7 @@ public class GameWorld extends World {
             addObject(rightLeg, 580, 450);
         } else if (incorrect == 7){
             addObject(face, 498, 309);
-            Greenfoot.delay(20);
+            Greenfoot.delay(5);
           
            // Create game end screen
             isWin = false;

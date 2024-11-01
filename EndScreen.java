@@ -24,9 +24,16 @@ public class EndScreen extends World{
         wordLabel = new Label("",30);
         wordLabel(trueword);
         addObject(wordLabel, getWidth() / 2, 300);
+
+        Button menuButton = new BackButton(this::backToMenu);
+        addObject(menuButton, 550, 350);
         
         fontColor();
         fireworks();
+    }
+
+    public void backToMenu() {
+        Greenfoot.setWorld(new TitleScreen());
     }
 
     private void wordLabel(char[] word) {
@@ -37,18 +44,6 @@ public class EndScreen extends World{
         }
 
         wordLabel.setValue("Correct word: " + wordString);
-    }
-    
-    public void CreateNextRoundButton()
-    {
-        // Add buttons 
-        Button nextRoundButton = new NextRoundButton(this::nextRound);
-        addObject(nextRoundButton, 300, 340);
-    }
-    
-    public void nextRound()
-    {
-        Greenfoot.setWorld(new GameWorld(face, musicButton));
     }
     
     private void fontColor()
