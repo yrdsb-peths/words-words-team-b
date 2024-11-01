@@ -4,11 +4,13 @@ public class EndScreen extends World{
     Label titleLabel; 
     boolean isWin;
     Face face;
+    Button musicButton;
     
-    public EndScreen(boolean isWin, Face face) 
+    public EndScreen(boolean isWin, Face face, Button musicButton) 
     {
         super(600, 400, 1);
         this.face = face;
+        this.musicButton = musicButton;
         
         setBackground("images/black-background.jpg");
         
@@ -40,7 +42,7 @@ public class EndScreen extends World{
     
     public void nextRound()
     {
-        Greenfoot.setWorld(new GameWorld(face));
+        Greenfoot.setWorld(new GameWorld(face, musicButton));
     }
     
     private void fontColor()

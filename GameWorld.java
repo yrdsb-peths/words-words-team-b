@@ -15,13 +15,15 @@ public class GameWorld extends World {
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
     Face face;
+    Button musicButton;
     boolean isWin = false;
     
 
-    public GameWorld(Face face) {
+    public GameWorld(Face face, Button musicButton) {
         super(1000, 600, 1);
         this.face = face;
-
+        this.musicButton = musicButton;
+        addObject(musicButton, 950, 555);
         
         // Load a random word for the game from a random list
         String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
@@ -129,7 +131,7 @@ public class GameWorld extends World {
           
            // create game end screen
             isWin = false;
-            EndScreen newScreen = new EndScreen(isWin,face);
+            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
             Greenfoot.setWorld(newScreen);
           
         }
@@ -185,7 +187,7 @@ public class GameWorld extends World {
         if(count == trueWord.length)
         {
             isWin = true;
-            EndScreen newScreen = new EndScreen(isWin, face);
+            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
     }
