@@ -3,6 +3,7 @@ import greenfoot.*;
 public class TitleScreen extends World {
    
     Button musicButton;
+    Face face;
 
     public TitleScreen() {
         super(600, 400, 1);
@@ -17,6 +18,16 @@ public class TitleScreen extends World {
 
         musicButton = new MusicButton(this::changeVolume);
         addObject(musicButton, 550, 350);
+
+        Button selectButton = new SelectButton(this::changeFace);
+        addObject(selectButton, 340, 220);
+
+        
+        RedCircle redCircle = new RedCircle();
+        addObject(redCircle, 250, 220);
+
+        face = new Face(false);
+        addObject(face, 250, 220);
 
         // Button starButton = new StarButton(this::goHighScore);
         // addObject(starButton, 50, 50);
@@ -33,9 +44,12 @@ public class TitleScreen extends World {
      * Create game screen 
      */
     public void goGameScreen() {
-        Greenfoot.setWorld(new GameWorld());
+        Greenfoot.setWorld(new GameWorld(face, musicButton));
     }
 
+    public void changeFace() {
+        face.changeImage();
+    }
 
     // public void goInstructions() {
     //     Greenfoot.setWorld(new InstructionScreen());

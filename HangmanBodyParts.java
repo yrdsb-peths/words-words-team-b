@@ -1,7 +1,7 @@
 import greenfoot.*;
 import java.util.List;
 
-public class HangmanBody extends Hangman {
+public class HangmanBodyParts extends Hangman {
 
     GifImage lineGif; 
     GreenfootImage linePic;
@@ -9,7 +9,7 @@ public class HangmanBody extends Hangman {
     boolean notImageOne;
     boolean gifFinished = false; 
 
-    public HangmanBody(String bodyPart, boolean isLeft) {
+    public HangmanBodyParts(String bodyPart, boolean isLeft) {
 
         gifFinished = false; 
 

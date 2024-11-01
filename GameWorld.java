@@ -14,9 +14,17 @@ public class GameWorld extends World {
 
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
+    Face face;
+    Button musicButton;
+    boolean isWin = false;
     
-    public GameWorld() {
+
+    public GameWorld(Face face, Button musicButton) {
+
         super(1000, 600, 1);
+        this.face = face;
+        this.musicButton = musicButton;
+        addObject(musicButton, 950, 555);
         
         // Load a random word for the game from a random list
         String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
@@ -91,35 +99,44 @@ public class GameWorld extends World {
             else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
             {
                 incorrect++;
-                
-                if(incorrect == 1 ) {
-                    HangmanHead head = new HangmanHead();
-                    addObject(head, 500, 285);
-                } else if (incorrect == 2) {
-                    HangmanBody body = new HangmanBody("body", false);
-                    addObject(body, 570, 388);
-                } else if (incorrect == 3) {
-                    HangmanBody leftArm = new HangmanBody("arm", true);
-                    addObject(leftArm, 420, 340);
-                } else if (incorrect == 4) {
-                    HangmanBody rightArm = new HangmanBody("arm", false);
-                    addObject(rightArm, 580, 340);
-                } else if (incorrect == 5) {
-                    HangmanBody leftLeg = new HangmanBody("leg", true);
-                    addObject(leftLeg, 420, 430);
-                } else if (incorrect == 6) {
-                    HangmanBody rightLeg = new HangmanBody("arm", false);
-                    addObject(rightLeg, 580, 430);
-                    
-                    EndScreen newScreen = new EndScreen();
-                    Greenfoot.setWorld(newScreen);
-                } 
+                createHangman();
             }
             
             alphabetMap.get(letter.charAt(0)).guess();
         }
     }
 
+    private void createHangman() {
+        if(incorrect == 1 ) {
+            HangmanHead head = new HangmanHead();
+            addObject(head, 500, 285);
+        } else if (incorrect == 2) {
+            HangmanBodyParts body = new HangmanBodyParts("body", false);
+            addObject(body, 570, 388);
+        } else if (incorrect == 3) {
+            HangmanBodyParts leftArm = new HangmanBodyParts("arm", true);
+            addObject(leftArm, 420, 340);
+        } else if (incorrect == 4) {
+            HangmanBodyParts rightArm = new HangmanBodyParts("arm", false);
+            addObject(rightArm, 580, 340);
+        } else if (incorrect == 5) {
+            HangmanBodyParts leftLeg = new HangmanBodyParts("leg", true);
+            addObject(leftLeg, 420, 430);
+        } else if (incorrect == 6) {
+            HangmanBodyParts rightLeg = new HangmanBodyParts("arm", false);
+            addObject(rightLeg, 580, 430);
+        } else if (incorrect == 7){
+            addObject(face, 498, 289);
+            Greenfoot.delay(20);
+          
+           // create game end screen
+            isWin = false;
+            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
+            Greenfoot.setWorld(newScreen);
+          
+        }
+      
+    }
     //map the alphabet 
     private HashMap<Character, Letter> createMap(String word)
     {
@@ -169,7 +186,7 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            NextRoundScreen newScreen = new NextRoundScreen();
+            NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
     }
