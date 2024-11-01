@@ -14,8 +14,6 @@ public class GameWorld extends World {
 
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
-    private boolean isWin = false;
-
     Face face;
     Button musicButton;
     
@@ -144,8 +142,7 @@ public class GameWorld extends World {
             Greenfoot.delay(20);
           
            // Create game end screen
-            isWin = false;
-            EndScreen newScreen = new EndScreen(isWin, face, musicButton);
+            EndScreen newScreen = new EndScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
           
         }
