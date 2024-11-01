@@ -7,6 +7,7 @@ public class TitleScreen extends World {
 
     public TitleScreen() {
         super(600, 400, 1);
+        setBackground("images/BlackBackground.png");
 
         // Add game name 
         Label gameLabel = new Label("Hangman", 100);
@@ -58,6 +59,5 @@ public class TitleScreen extends World {
     // public void goHighScore() {
     //     Greenfoot.setWorld(new HighScoreScreen());
     // }
-
 
 }

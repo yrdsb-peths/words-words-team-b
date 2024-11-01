@@ -14,17 +14,24 @@ public class GameWorld extends World {
 
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
+    private boolean isWin = false;
+
     Face face;
     Button musicButton;
-    boolean isWin = false;
     
 
     public GameWorld(Face face, Button musicButton) {
 
         super(1000, 600, 1);
+        setBackground("images/blueBackground.png");
         this.face = face;
+
+        // Add music button 
         this.musicButton = musicButton;
         addObject(musicButton, 950, 555);
+
+        Gallow gallow = new Gallow();
+        addObject(gallow, 570, 430);
         
         // Load a random word for the game from a random list
         String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
@@ -106,30 +113,34 @@ public class GameWorld extends World {
         }
     }
 
+    /*
+     * Creates the hangman and endScreen at the end 
+     */
+
     private void createHangman() {
         if(incorrect == 1 ) {
             HangmanHead head = new HangmanHead();
-            addObject(head, 500, 285);
+            addObject(head, 500, 305);
         } else if (incorrect == 2) {
             HangmanBodyParts body = new HangmanBodyParts("body", false);
-            addObject(body, 570, 388);
+            addObject(body, 570, 408);
         } else if (incorrect == 3) {
             HangmanBodyParts leftArm = new HangmanBodyParts("arm", true);
-            addObject(leftArm, 420, 340);
+            addObject(leftArm, 420, 360);
         } else if (incorrect == 4) {
             HangmanBodyParts rightArm = new HangmanBodyParts("arm", false);
-            addObject(rightArm, 580, 340);
+            addObject(rightArm, 580, 360);
         } else if (incorrect == 5) {
             HangmanBodyParts leftLeg = new HangmanBodyParts("leg", true);
-            addObject(leftLeg, 420, 430);
+            addObject(leftLeg, 420, 450);
         } else if (incorrect == 6) {
             HangmanBodyParts rightLeg = new HangmanBodyParts("arm", false);
-            addObject(rightLeg, 580, 430);
+            addObject(rightLeg, 580, 450);
         } else if (incorrect == 7){
-            addObject(face, 498, 289);
+            addObject(face, 498, 309);
             Greenfoot.delay(20);
           
-           // create game end screen
+           // Create game end screen
             isWin = false;
             EndScreen newScreen = new EndScreen(isWin, face, musicButton);
             Greenfoot.setWorld(newScreen);
