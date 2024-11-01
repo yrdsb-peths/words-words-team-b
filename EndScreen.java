@@ -16,9 +16,20 @@ public class EndScreen extends World{
         this.musicButton = musicButton;
         trueword = word;
         
+        int highScore;
+        
+        if(GameWorld.getScore() > GameWorld.getHighScore())
+        {
+           GameWorld.setHighScore(GameWorld.getScore());
+        }
+        
+        Label highScoreLabel = new Label(GameWorld.getHighScore(), 40);
+        addObject(highScoreLabel, 50, 50);
+        
         setBackground("images/black-background.jpg");
         
-        titleLabel = new Label("YOU LOST", 60);        
+        titleLabel = new Label("YOU LOST", 60);
+
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
 
         wordLabel = new Label("",30);
@@ -30,6 +41,8 @@ public class EndScreen extends World{
         
         fontColor();
         fireworks();
+        
+        GameWorld.resetScore();
     }
 
     public void backToMenu() {
