@@ -3,10 +3,12 @@ import greenfoot.*;
 public class EndScreen extends World{
     Label titleLabel; 
     boolean isWin;
+    Face face;
     
-    public EndScreen(boolean isWin) 
+    public EndScreen(boolean isWin, Face face) 
     {
         super(600, 400, 1);
+        this.face = face;
         
         setBackground("images/black-background.jpg");
         
@@ -38,7 +40,7 @@ public class EndScreen extends World{
     
     public void nextRound()
     {
-        Greenfoot.setWorld(new GameWorld(null));
+        Greenfoot.setWorld(new GameWorld(face));
     }
     
     private void fontColor()

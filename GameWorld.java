@@ -125,10 +125,11 @@ public class GameWorld extends World {
             addObject(rightLeg, 580, 430);
         } else if (incorrect == 7){
             addObject(face, 498, 289);
+            Greenfoot.delay(20);
           
            // create game end screen
             isWin = false;
-            EndScreen newScreen = new EndScreen(isWin);
+            EndScreen newScreen = new EndScreen(isWin,face);
             Greenfoot.setWorld(newScreen);
           
         }
@@ -184,7 +185,7 @@ public class GameWorld extends World {
         if(count == trueWord.length)
         {
             isWin = true;
-            EndScreen newScreen = new EndScreen(isWin);
+            EndScreen newScreen = new EndScreen(isWin, face);
             Greenfoot.setWorld(newScreen);
         }
     }
