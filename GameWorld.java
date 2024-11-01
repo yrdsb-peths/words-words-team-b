@@ -186,7 +186,7 @@ public class GameWorld extends World {
         
         if(count == trueWord.length)
         {
-            NextRoundScreen newScreen = new NextRoundScreen();
+            NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
     }
