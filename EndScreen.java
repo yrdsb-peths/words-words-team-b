@@ -2,6 +2,7 @@ import greenfoot.*;
 
 public class EndScreen extends World{
     Label titleLabel; 
+
     Label wordLabel;
 
     Face face;
@@ -10,6 +11,7 @@ public class EndScreen extends World{
     private char[] trueword; 
 
     public EndScreen(Face face, Button musicButton, char[] word) 
+
     {
         super(600, 400, 1);
         this.face = face;
