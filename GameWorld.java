@@ -214,9 +214,9 @@ public class GameWorld extends World {
         {
             displayTime--;
         }
-        TimerLabel tl = new TimerLabel(displayTime, 50);
+        TimerLabel tl = new TimerLabel(displayTime, 40);
         removeObjects(getObjects(TimerLabel.class));
-        addObject(tl, 950, 50);
+        addObject(tl, 970, 20);
         timer--;
         
         if(displayTime == -1)
