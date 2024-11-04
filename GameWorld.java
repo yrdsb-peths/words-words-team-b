@@ -17,9 +17,10 @@ public class GameWorld extends World {
     Face face;
     Button musicButton;
     
-
+    private static int score = 0;
+    private static int highScore = 0;
+   
     public GameWorld(Face face, Button musicButton) {
-
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
         this.face = face;
@@ -139,10 +140,11 @@ public class GameWorld extends World {
             addObject(rightLeg, 580, 450);
         } else if (incorrect == 7){
             addObject(face, 498, 309);
-            Greenfoot.delay(20);
+            Greenfoot.delay(5);
           
            // Create game end screen
             EndScreen newScreen = new EndScreen(face, musicButton);
+
             Greenfoot.setWorld(newScreen);
           
         }
@@ -195,10 +197,31 @@ public class GameWorld extends World {
             }
         }
         
-        if(count == trueWord.length)
+        if (count == trueWord.length)
         {
+            score++;
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
+    }
+    
+    public static int getScore()
+    {
+        return score;
+    }
+    
+    public static int getHighScore()
+    {
+        return highScore;
+    }
+    
+    public static void resetScore()
+    {
+        score = 0;
+    }
+    
+    public static void setHighScore(int theHighScore)
+    {
+        highScore = theHighScore;
     }
 }

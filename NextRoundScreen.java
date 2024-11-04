@@ -23,6 +23,9 @@ public class NextRoundScreen extends World
         this.face = face;
         this.musicButton = musicButton;
         
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 40);
+        
         CreateNextRoundButton();
     }
     
@@ -37,4 +40,5 @@ public class NextRoundScreen extends World
     {
         Greenfoot.setWorld(new GameWorld(face, musicButton));
     }
+    
 }
