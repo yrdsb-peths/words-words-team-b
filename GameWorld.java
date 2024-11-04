@@ -12,34 +12,35 @@ public class GameWorld extends World {
     private Label wordLabel;
     private Label categoryLabel;
 
-    private int incorrect = 0; 
-    private int incorrectLetterX = 350;
-    Face face;
-    Button musicButton;
-    
+    private int incorrect = 0;
+    private Face face;
+    private Button musicButton;
+
     private static int score = 0;
     private static int highScore = 0;
-   
+
     public GameWorld(Face face, Button musicButton) {
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
         this.face = face;
 
-        // Add music button 
+        // Add music button
         this.musicButton = musicButton;
         addObject(musicButton, 950, 555);
 
         Gallow gallow = new Gallow();
         addObject(gallow, 570, 430);
-        
+
         // Load a random word for the game from a random list
-        String[] wordLists = {"word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt", "word-lists/adjectives-themed.txt"};
+        String[] wordLists = { "word-lists/verbs-themed.txt", "word-lists/nouns-themed.txt",
+                "word-lists/adjectives-themed.txt" };
         String[] randomWord = WordLoader.getRandomWord(wordLists[(int) (Math.random() * wordLists.length)]);
         // Separate the word and the category
         trueWord = randomWord[0].toCharArray();
         category = randomWord[1];
 
-        // Fill the current word with underscores, check if space or dash, if so, display it
+        // Fill the current word with underscores, check if space or dash, if so,
+        // display it
         currentWord = new char[trueWord.length];
         for (int i = 0; i < currentWord.length; i++) {
             if (trueWord[i] == ' ' || trueWord[i] == '-') {
@@ -63,8 +64,8 @@ public class GameWorld extends World {
         addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
-        
-        //clear any previous keys input
+
+        // clear any previous keys input
         Greenfoot.getKey();
     }
 
@@ -86,43 +87,39 @@ public class GameWorld extends World {
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
         if (letter != null && letter.length() == 1 && Character.isLetter(letter.charAt(0))) {
-            
+
             // Check if the letter is in the word
             boolean letterInWord = false;
             for (int i = 0; i < trueWord.length; i++) {
                 if (trueWord[i] == letter.charAt(0)) {
                     currentWord[i] = trueWord[i];
                     letterInWord = true;
-                    
+
                 }
             }
 
             // Update the word label
             updateWordLabel(currentWord);
-            
-            if(letterInWord)
-            {
+
+            if (letterInWord) {
                 // Checks if user got the word right
                 checkWin();
-            }
-            else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
-            {
+            } else if (!alphabetMap.get(letter.charAt(0)).isGuessed()) {
                 incorrect++;
                 createHangman();
             }
-            
+
             alphabetMap.get(letter.charAt(0)).guess();
         }
     }
 
     /*
-     * Creates the hangman and endScreen at the end 
+     * Creates the hangman and endScreen at the end
      */
-
     private void createHangman() {
-        if(incorrect == 1 ) {
+        if (incorrect == 1) {
             HangmanHead head = new HangmanHead();
-            addObject(head, 500, 305); 
+            addObject(head, 500, 305);
         } else if (incorrect == 2) {
             HangmanBodyParts body = new HangmanBodyParts("body", false);
             addObject(body, 570, 408);
@@ -138,91 +135,83 @@ public class GameWorld extends World {
         } else if (incorrect == 6) {
             HangmanBodyParts rightLeg = new HangmanBodyParts("arm", false);
             addObject(rightLeg, 580, 450);
-        } else if (incorrect == 7){
+        } else if (incorrect == 7) {
             addObject(face, 498, 309);
             Greenfoot.delay(5);
-          
-           // Create game end screen
+
+            // Create game end screen
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
 
             Greenfoot.setWorld(newScreen);
-          
+
         }
-      
+
     }
-    //map the alphabet 
-    private HashMap<Character, Letter> createMap(String word)
-    {
+
+    // map the alphabet
+    private HashMap<Character, Letter> createMap(String word) {
         HashMap<Character, Letter> alphabet = new HashMap<Character, Letter>();
-        
+
         char[] charArray = ALPHABET.toCharArray();
-        
+
         int xPos = 100;
         int yPos = 200;
         int counter = 0;
-        
-        for(char letter : charArray)
-        {
-            //change the position latter
+
+        for (char letter : charArray) {
+            // add the letter to the map
             Letter letterObj = new Letter(letter, xPos, yPos);
             alphabet.put((Character) letter, letterObj);
-            
+
             addObject(letterObj, xPos, yPos);
-            
+
             counter++;
-            
-            if(counter % 6 == 0)
-            {
+
+            if (counter % 6 == 0) {
                 yPos += 50;
                 xPos = 50;
             }
-            
+
             xPos += 50;
         }
-        
+
         return alphabet;
 
     }
-    
+
     // Checks if currentWord matches trueWord, then goes to EndScreen if true
-    private void checkWin()
-    {
+    private void checkWin() {
         int count = 0;
-        
-        for(int i = 0; i < trueWord.length; i++)
-        {
-            if(currentWord[i] == trueWord[i])
-            {
+
+        // Loop through the current word and check if it matches the true word
+        for (int i = 0; i < trueWord.length; i++) {
+            if (currentWord[i] == trueWord[i]) {
                 count++;
             }
         }
-        
-        if (count == trueWord.length)
-        {
+
+        // If the count is equal to the length of the true word, the user has won
+        if (count == trueWord.length) {
             score++;
             Greenfoot.delay(5);
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
     }
-    
-    public static int getScore()
-    {
+
+    public static int getScore() {
         return score;
     }
-    
-    public static int getHighScore()
-    {
+
+    public static int getHighScore() {
         return highScore;
     }
-    
-    public static void resetScore()
-    {
+
+    public static void resetScore() {
         score = 0;
     }
-    
-    public static void setHighScore(int theHighScore)
-    {
+
+    public static void setHighScore(int theHighScore) {
         highScore = theHighScore;
     }
 }

@@ -1,6 +1,6 @@
 public class Queue<Item> {
     private Node first, last;
-    
+
     private class Node {
         Item item;
         Node next;
@@ -26,10 +26,10 @@ public class Queue<Item> {
         Item item = first.item;
         first = first.next;
 
-        if(isEmpty()) {
+        if (isEmpty()) {
             last = null;
         }
 
-        return item; 
+        return item;
     }
 }

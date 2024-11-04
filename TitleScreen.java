@@ -1,7 +1,7 @@
 import greenfoot.*;
 
 public class TitleScreen extends World {
-   
+
     Button musicButton;
     Face face;
 
@@ -9,11 +9,11 @@ public class TitleScreen extends World {
         super(600, 400, 1);
         setBackground("images/BlackBackground.png");
 
-        // Add game name 
+        // Add game name
         Label gameLabel = new Label("Hangman", 100);
-        addObject(gameLabel, getWidth()/2, 100);
+        addObject(gameLabel, getWidth() / 2, 100);
 
-        // Add buttons 
+        // Add buttons
         Button startButton = new StartButton(this::goGameScreen);
         addObject(startButton, 300, 340);
 
@@ -23,7 +23,6 @@ public class TitleScreen extends World {
         Button selectButton = new SelectButton(this::changeFace);
         addObject(selectButton, 340, 220);
 
-        
         RedCircle redCircle = new RedCircle();
         addObject(redCircle, 250, 220);
 
@@ -32,14 +31,14 @@ public class TitleScreen extends World {
     }
 
     /*
-     * Plays or pauses the music 
+     * Plays or pauses the music
      */
     public void changeVolume() {
-        ((MusicButton) musicButton).setButton(); 
+        ((MusicButton) musicButton).setButton();
     }
 
     /*
-     * Create game screen 
+     * Create game screen
      */
     public void goGameScreen() {
         Greenfoot.setWorld(new GameWorld(face, musicButton));
