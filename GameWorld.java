@@ -199,6 +199,7 @@ public class GameWorld extends World {
         if (count == trueWord.length)
         {
             score++;
+            Greenfoot.delay(5);
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
