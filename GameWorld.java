@@ -24,7 +24,11 @@ public class GameWorld extends World {
         setBackground("images/blueBackground.png");
         this.face = face;
 
-        // Add music button
+        // Add score
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 20);
+        
+        // Add music button 
         this.musicButton = musicButton;
         addObject(musicButton, 950, 555);
 

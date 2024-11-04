@@ -17,10 +17,15 @@ public class EndScreen extends World {
         if (GameWorld.getScore() > GameWorld.getHighScore()) {
             GameWorld.setHighScore(GameWorld.getScore());
         }
-
-        Label highScoreLabel = new Label(GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 50, 50);
-
+        
+        // Score label
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 20);
+        
+        // High score label
+        Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
+        addObject(highScoreLabel, 100, 50);
+        
         setBackground("images/black-background.jpg");
 
         // Display title label and the correct word
