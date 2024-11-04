@@ -5,23 +5,28 @@ public class GameWorld extends World {
     private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     HashMap<Character, Letter> alphabetMap = new HashMap<Character, Letter>();
 
+    // Words
     private char[] trueWord;
     private char[] currentWord;
     private String category;
 
+    // Labels
     private Label wordLabel;
     private Label categoryLabel;
-
-    private int incorrect = 0; 
-    private int incorrectLetterX = 350;
+    
+    // Actors 
     Face face;
     Button musicButton;
     
     private static int score = 0;
     private static int highScore = 0;
+    private int incorrect = 0; 
    
+    /*
+     * Constructor 
+     */
     public GameWorld(Face face, Button musicButton) {
-        super(1000, 600, 1);
+        super(1000, 600, 1); // Creates world 
         setBackground("images/blueBackground.png");
         this.face = face;
 
