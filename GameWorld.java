@@ -14,7 +14,8 @@ public class GameWorld extends World {
 
     private int incorrect = 0; 
     private int incorrectLetterX = 350;
-    private int timer = 1000;
+    private int timer = Integer.MAX_VALUE;
+    private int displayTime = 30;
 
     Face face;
     Button musicButton;
@@ -67,19 +68,12 @@ public class GameWorld extends World {
     }
 
     public void act() {
-        //testTimer();
+        //displays a countdown timer
+        countdownTimer();
+        
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
-        //Greenfoot.delay(45);
-        //timer--;
     }
-    
-    //private void testTimer() {
-        //Label l = new Label(timer, 50);
-        //removeObject(l);
-        //addObject(l, getWidth() / 2, getHeight() / 2);
-        
-    //}
 
     private void updateWordLabel(char[] word) {
         // Add a space between each character in the word for spacing
@@ -206,6 +200,24 @@ public class GameWorld extends World {
         if(count == trueWord.length)
         {
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
+            Greenfoot.setWorld(newScreen);
+        }
+    }
+    
+    // Creates a countdown timer
+    private void countdownTimer() {
+        if(timer % 100 == 0)
+        {
+            displayTime--;
+        }
+        TimerLabel tl = new TimerLabel(displayTime, 50);
+        removeObjects(getObjects(TimerLabel.class));
+        addObject(tl, 950, 50);
+        timer--;
+        
+        if(displayTime == -1)
+        {
+            EndScreen newScreen = new EndScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
     }
