@@ -1,20 +1,14 @@
-# Set up Greenfoot for VSCode
+## Group B - Jacob, Marco, Yan, Kholly
 
-[Mac]
-1. Open `Finder` and navigate to the Applications folder.
-2. Right-click on the Greenfoot app and select `Show Package Contents`.
-3. In the opened folder, go to `Contents -> Resources -> Java` and find the `greenfoot.jar` file.
-4. Copy this `greenfoot.jar` to the `/lib` Folder in this project.
+## Data Structures
+### Maps
+- `GameWorld.java` - Mapping each character of the alphabet to the `Letter` object, as part of the on-screen alphabet display. A map is used because every letter is unique, and should have only one `Letter` object associated with it.
+- `WordLoader.java` - Mapping each word to the category. A map is used because every word will have exactly one category assigned.
 
-[Windows]
-1. Open `File Explorer` and navigate to `C:\Program Files\Greenfoot` and locate the `greenfoot.jar` file.
-2. Copy this `greenfoot.jar` to the `\lib` Folder in this project.
+### Arrays
+- `GameWorld.java` - Storing the list of word list file names, so a random list can be chosen by index. The values are defined at compile time, so an array works best.
+- `GameWorld.java` - Storing the character array for the random word to guess, this makes it simple to access the letters by index. The length of the word is also known at assignment, so there is no need for a list.
 
-<br>
-<br>
-
-# project.greenfoot
-Copy the `project.greenfoot.md` file and rename it to `project.greenfoot`
-
-# Learn Markdown Basics
-[Markdown basics](https://www.markdownguide.org/getting-started/)
+### Lists
+- `WordLoader.java` - In `getRandomWord()`, to contain all the keys in the word map. The number of keys is variable, so a list works best.
+- `HangmanBodyParts.java`, `HangmanHead.java`- To contain the frames of the hangman gif. The number of frames in the gif is not known, so we use list.
