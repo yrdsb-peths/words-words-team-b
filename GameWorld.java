@@ -13,10 +13,11 @@ public class GameWorld extends World {
     private Label categoryLabel;
 
     private int incorrect = 0;
-    private int timer = Integer.MAX_VALUE;
-    private int displayTime = 30;
     private Face face;
     private Button musicButton;
+
+    private int timer = Integer.MAX_VALUE;
+    private int displayTime = 30;
 
     private static int score = 0;
     private static int highScore = 0;
@@ -224,9 +225,6 @@ public class GameWorld extends World {
             Greenfoot.setWorld(newScreen);
         }
     }
-    
-    public static int getScore()
-    {
 
     public static int getScore() {
         return score;
