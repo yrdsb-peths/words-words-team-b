@@ -20,9 +20,10 @@ public class GameWorld extends World {
     Face face;
     Button musicButton;
     
-
+    private static int score = 0;
+    private static int highScore = 0;
+   
     public GameWorld(Face face, Button musicButton) {
-
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
         this.face = face;
@@ -65,6 +66,9 @@ public class GameWorld extends World {
         addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
+        
+        //clear any previous keys input
+        Greenfoot.getKey();
     }
 
     public void act() {
@@ -87,7 +91,7 @@ public class GameWorld extends World {
 
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
-        if (letter != null && letter.length() == 1) {
+        if (letter != null && letter.length() == 1 && Character.isLetter(letter.charAt(0))) {
             
             // Check if the letter is in the word
             boolean letterInWord = false;
@@ -124,7 +128,7 @@ public class GameWorld extends World {
     private void createHangman() {
         if(incorrect == 1 ) {
             HangmanHead head = new HangmanHead();
-            addObject(head, 500, 305);
+            addObject(head, 500, 305); 
         } else if (incorrect == 2) {
             HangmanBodyParts body = new HangmanBodyParts("body", false);
             addObject(body, 570, 408);
@@ -142,10 +146,11 @@ public class GameWorld extends World {
             addObject(rightLeg, 580, 450);
         } else if (incorrect == 7){
             addObject(face, 498, 309);
-            Greenfoot.delay(20);
-            
-            // Create game end screen
-            EndScreen newScreen = new EndScreen(face, musicButton);
+            Greenfoot.delay(5);
+          
+           // Create game end screen
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
+
             Greenfoot.setWorld(newScreen);
         }
       
@@ -197,8 +202,10 @@ public class GameWorld extends World {
             }
         }
         
-        if(count == trueWord.length)
+        if (count == trueWord.length)
         {
+            score++;
+            Greenfoot.delay(5);
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
@@ -220,5 +227,23 @@ public class GameWorld extends World {
             EndScreen newScreen = new EndScreen(face, musicButton);
             Greenfoot.setWorld(newScreen);
         }
+    public static int getScore()
+    {
+        return score;
+    }
+    
+    public static int getHighScore()
+    {
+        return highScore;
+    }
+    
+    public static void resetScore()
+    {
+        score = 0;
+    }
+    
+    public static void setHighScore(int theHighScore)
+    {
+        highScore = theHighScore;
     }
 }

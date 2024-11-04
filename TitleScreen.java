@@ -29,9 +29,6 @@ public class TitleScreen extends World {
 
         face = new Face(false);
         addObject(face, 250, 220);
-
-        // Button starButton = new StarButton(this::goHighScore);
-        // addObject(starButton, 50, 50);
     }
 
     /*
@@ -51,13 +48,5 @@ public class TitleScreen extends World {
     public void changeFace() {
         face.changeImage();
     }
-
-    // public void goInstructions() {
-    //     Greenfoot.setWorld(new InstructionScreen());
-    // }
-
-    // public void goHighScore() {
-    //     Greenfoot.setWorld(new HighScoreScreen());
-    // }
 
 }
