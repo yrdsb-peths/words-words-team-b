@@ -224,9 +224,11 @@ public class GameWorld extends World {
         
         if(displayTime == -1)
         {
-            EndScreen newScreen = new EndScreen(face, musicButton);
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
             Greenfoot.setWorld(newScreen);
         }
+    }
+    
     public static int getScore()
     {
         return score;
