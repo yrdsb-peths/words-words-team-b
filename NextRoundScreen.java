@@ -26,6 +26,9 @@ public class NextRoundScreen extends World
         
         Label score = new Label("Score: " + GameWorld.getScore(), 40);
         addObject(score, 70, 40);
+
+        GoodJobGif goodJob = new GoodJobGif();
+        addObject(goodJob, 300, 200);
         
         CreateNextRoundButton();
     }
