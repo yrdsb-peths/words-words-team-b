@@ -143,7 +143,7 @@ public class GameWorld extends World {
             Greenfoot.delay(5);
           
            // Create game end screen
-            EndScreen newScreen = new EndScreen(face, musicButton);
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
 
             Greenfoot.setWorld(newScreen);
           
