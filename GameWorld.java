@@ -84,7 +84,7 @@ public class GameWorld extends World {
 
     private void handleUserInput(String letter) {
         // Null check (no key pressed) and length check (keys like escape, shift, etc.)
-        if (letter != null && letter.length() == 1) {
+        if (letter != null && letter.length() == 1 && Character.isLetter(letter.charAt(0))) {
             
             // Check if the letter is in the word
             boolean letterInWord = false;
