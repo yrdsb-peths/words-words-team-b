@@ -2,8 +2,8 @@ import greenfoot.*;
 
 public class TitleScreen extends World {
 
-    Button musicButton;
-    Face face;
+    private Button musicButton;
+    private Face face;
 
     public TitleScreen() {
         super(600, 400, 1);
@@ -38,7 +38,7 @@ public class TitleScreen extends World {
     }
 
     /*
-     * Create game screen
+     * Creates game screen
      */
     public void goGameScreen() {
         Greenfoot.setWorld(new GameWorld(face, musicButton));

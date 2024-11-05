@@ -1,21 +1,23 @@
 import greenfoot.*;
 
 public class MusicButton extends Button {
-    public boolean isOff = false;
+    private static boolean isOff = false;
 
     // Load the images and music
-    GreenfootImage musicOn = new GreenfootImage("images/musicOn.png");
-    GreenfootImage musicOff = new GreenfootImage("images/musicOff.png");
-    GreenfootSound music = new GreenfootSound("sounds/backgroundMusic.mp3");
+    private static GreenfootImage musicOn = new GreenfootImage("images/musicOn.png");
+    private static GreenfootImage musicOff = new GreenfootImage("images/musicOff.png");
+    private static GreenfootSound music = new GreenfootSound("sounds/backgroundMusic.mp3");
 
     /*
      * Constructor
      */
     public MusicButton(Runnable action) {
-        super(action);
-        setImage(musicOn);
-        music.play();
-        music.playLoop();
+        super(action); // calls super class constructor 
+        setImage(musicOn); // sets image
+
+        // Plays and loop music
+        music.play(); 
+        music.playLoop(); 
     }
 
     /*
@@ -35,5 +37,5 @@ public class MusicButton extends Button {
             music.play();
         }
     }
-
+    
 }

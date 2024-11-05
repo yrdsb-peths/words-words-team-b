@@ -2,8 +2,7 @@ import greenfoot.*;
 
 public class Button extends Actor {
     private Runnable action;
-
-    GreenfootSound clickSound = new GreenfootSound("sounds/mouseClick.mp3");
+    private GreenfootSound clickSound = new GreenfootSound("sounds/mouseClick.mp3");
 
     /*
      * Constructor
@@ -13,7 +12,7 @@ public class Button extends Actor {
     }
 
     /*
-     * act method for all buttons
+     * Act method for all buttons
      */
     public void act() {
         // Checks if user clicked the button
@@ -23,7 +22,7 @@ public class Button extends Actor {
             clickSound.play();
             Greenfoot.delay(20);
 
-            // runs the action
+            // Runs the action
             if (action != null) {
                 action.run();
             }

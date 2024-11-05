@@ -1,25 +1,31 @@
 import greenfoot.*;
 import java.util.List;
 
-public class HangmanBodyParts extends Hangman {
+public class HangmanBodyParts extends Actor {
 
-    GifImage lineGif;
-    GreenfootImage linePic;
-    GreenfootImage imageOne;
-    boolean notImageOne;
-    boolean gifFinished = false;
+    private GifImage lineGif;
+    private GreenfootImage linePic;
+    private GreenfootImage imageOne;
+    private boolean notImageOne;
+    private boolean gifFinished = false;
 
+    /*
+     * Constructor
+     */
     public HangmanBodyParts(String bodyPart, boolean isLeft) {
 
         gifFinished = false;
 
+        // Gif 
         lineGif = new GifImage("redLine.gif");
         List<GreenfootImage> images = lineGif.getImages(); // get list of images
         imageOne = images.get(0); // get reference to first image
 
+        // Image
         linePic = new GreenfootImage("images/redLine.png");
         linePic.scale(150, 150);
 
+        // Checks which part of body
         if (bodyPart == "body") {
             linePic.rotate(90);
 
@@ -64,7 +70,7 @@ public class HangmanBodyParts extends Hangman {
         if ((getImage() != imageOne) != notImageOne) // was there a change involving first image
         {
             notImageOne = !notImageOne; // record change
-            // if setting first image,
+
             if (!notImageOne) {
                 gifFinished = true;
             }

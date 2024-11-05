@@ -20,25 +20,35 @@ public class Letter extends Actor {
 
         setImage((GreenfootImage) null);
 
-        letterLabel = new Label(Character.toString(letter), size);
+        letterLabel = new Label(Character.toString(letter), size);        
     }
 
     public void addedToWorld(World world) {
         world.addObject(letterLabel, xPos, yPos);
     }
 
+    /*
+     * Crosses the letter if not guessed
+     */
     public void guess() {
-        if (!guessed)
-            crossLetter();
+        if (!guessed) crossLetter();
 
         guessed = true;
     }
 
+    /*
+     * Create a cross for guessed word 
+     */
     public void crossLetter() {
         Label crossLabel = new Label("/", size);
+        // Set the cross to be red
+        crossLabel.setFillColor(new Color(180, 20, 20));
         getWorld().addObject(crossLabel, xPos, yPos);
     }
 
+    /*
+     * Return if guessed
+     */
     public boolean isGuessed() {
         return guessed;
     }
