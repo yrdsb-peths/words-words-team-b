@@ -1,10 +1,10 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class NextRoundScreen extends World {
-    Face face;
-    Button musicButton;
+    private Face face;
+    private Button musicButton;
 
-    String userInput;
+    private String userInput;
 
     public NextRoundScreen(Face face, Button musicButton) {
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.

@@ -1,17 +1,11 @@
 import greenfoot.*;
 
 public class EndScreen extends World {
-    Label titleLabel;
-
-    Label wordLabel;
-
-    Face face;
-    Button musicButton;
+    private Label titleLabel;
+    private Label wordLabel;
 
     public EndScreen(Face face, Button musicButton, char[] trueWord) {
         super(600, 400, 1);
-        this.face = face;
-        this.musicButton = musicButton;
 
         // Update high score
         if (GameWorld.getScore() > GameWorld.getHighScore()) {

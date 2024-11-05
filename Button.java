@@ -2,8 +2,7 @@ import greenfoot.*;
 
 public class Button extends Actor {
     private Runnable action;
-
-    GreenfootSound clickSound = new GreenfootSound("sounds/mouseClick.mp3");
+    private GreenfootSound clickSound = new GreenfootSound("sounds/mouseClick.mp3");
 
     /*
      * Constructor
