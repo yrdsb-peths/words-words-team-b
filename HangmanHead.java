@@ -1,7 +1,7 @@
 import greenfoot.*;
 import java.util.List;
 
-public class HangmanHead extends Hangman {
+public class HangmanHead extends Actor {
 
     GifImage headGif;
     GreenfootImage headPic;
