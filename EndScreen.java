@@ -24,7 +24,7 @@ public class EndScreen extends World {
         
         // High score label
         Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 100, 50);
+        addObject(highScoreLabel, 110, 50);
         
         setBackground("images/black-background.jpg");
 

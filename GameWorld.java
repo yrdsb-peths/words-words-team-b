@@ -77,7 +77,7 @@ public class GameWorld extends World {
     }
 
     public void act() {
-        //displays a countdown timer
+        // Displays a countdown timer
         countdownTimer();
         
         // Get keypresses and interpret it
@@ -210,8 +210,7 @@ public class GameWorld extends World {
     
     // Creates a countdown timer
     private void countdownTimer() {
-        if(timer % 100 == 0)
-        {
+        if(timer % 100 == 0) {
             displayTime--;
         }
         TimerLabel tl = new TimerLabel(displayTime, 40);
@@ -219,8 +218,7 @@ public class GameWorld extends World {
         addObject(tl, 970, 20);
         timer--;
         
-        if(displayTime == -1)
-        {
+        if(displayTime == -1) {
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
             Greenfoot.setWorld(newScreen);
         }
