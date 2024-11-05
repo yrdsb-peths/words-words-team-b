@@ -38,7 +38,7 @@ public class TitleScreen extends World {
     }
 
     /*
-     * Create game screen
+     * Creates game screen
      */
     public void goGameScreen() {
         Greenfoot.setWorld(new GameWorld(face, musicButton));
