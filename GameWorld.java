@@ -16,6 +16,9 @@ public class GameWorld extends World {
     private Face face;
     private Button musicButton;
 
+    private int timer = Integer.MAX_VALUE;
+    private int displayTime = 30;
+
     private static int score = 0;
     private static int highScore = 0;
 
@@ -74,6 +77,9 @@ public class GameWorld extends World {
     }
 
     public void act() {
+        //displays a countdown timer
+        countdownTimer();
+        
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
     }
@@ -147,7 +153,6 @@ public class GameWorld extends World {
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
 
             Greenfoot.setWorld(newScreen);
-
         }
 
     }
@@ -199,6 +204,24 @@ public class GameWorld extends World {
             score++;
             Greenfoot.delay(5);
             NextRoundScreen newScreen = new NextRoundScreen(face, musicButton);
+            Greenfoot.setWorld(newScreen);
+        }
+    }
+    
+    // Creates a countdown timer
+    private void countdownTimer() {
+        if(timer % 100 == 0)
+        {
+            displayTime--;
+        }
+        TimerLabel tl = new TimerLabel(displayTime, 40);
+        removeObjects(getObjects(TimerLabel.class));
+        addObject(tl, 970, 20);
+        timer--;
+        
+        if(displayTime == -1)
+        {
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
             Greenfoot.setWorld(newScreen);
         }
     }
