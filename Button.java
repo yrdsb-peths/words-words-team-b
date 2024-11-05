@@ -6,9 +6,9 @@ public class Button extends Actor {
     GreenfootSound clickSound = new GreenfootSound("sounds/mouseClick.mp3"); 
 
     /*
-     * Constructor 
+     * Constructor
      */
-    public Button (Runnable action) {
+    public Button(Runnable action) {
         this.action = action;
     }
 
@@ -16,11 +16,10 @@ public class Button extends Actor {
      * Act method for all buttons 
      */
     public void act() {
-
         // Checks if user clicked the button
         if (Greenfoot.mouseClicked(this)) {
-            
-            // Plays the mouse clicking sound and delays to match the sound 
+
+            // Plays the mouse clicking sound and delays to match the sound
             clickSound.play();
             Greenfoot.delay(20);
 

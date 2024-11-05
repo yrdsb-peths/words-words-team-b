@@ -12,3 +12,6 @@
 ### Lists
 - `WordLoader.java` - In `getRandomWord()`, to contain all the keys in the word map. The number of keys is variable, so a list works best.
 - `HangmanBodyParts.java`, `HangmanHead.java`- To contain the frames of the hangman gif. The number of frames in the gif is not known, so we use list.
+
+### Queue
+- `Face.java` - To cycle between the avatars on the menu screen. A queue is used since it is cyclical

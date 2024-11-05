@@ -10,7 +10,7 @@ public class WordLoader {
     public static Map<String, String> loadWords(String path) {
         // Create a map to store the words with the category
         Map<String, String> words = new HashMap<String, String>();
-        
+
         // Create a File object with the path
         File file = new File(path);
 
@@ -47,6 +47,6 @@ public class WordLoader {
         String randomKey = keys.get((int) (Math.random() * keys.size()));
 
         // Return an array with the random key and the word
-        return new String[] {randomKey, words.get(randomKey)};
+        return new String[] { randomKey, words.get(randomKey) };
     }
 }

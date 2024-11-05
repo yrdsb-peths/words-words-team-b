@@ -10,47 +10,41 @@ public class EndScreen extends World{
     Face face;
     Button musicButton;
 
-    private char[] trueword; 
-
-    /*
-     * Constructor 
-     */
-    public EndScreen(Face face, Button musicButton, char[] word) 
-    {
-        super(600, 400, 1); // Creates the world 
+    public EndScreen(Face face, Button musicButton, char[] trueWord) {
+        super(600, 400, 1);
         setBackground("images/black-background.jpg");
-        
-        // Sets properties 
         this.face = face;
         this.musicButton = musicButton;
-        trueword = word;
-        
-        // Set highScore
-        int highScore;
-        
-        if(GameWorld.getScore() > GameWorld.getHighScore())
-        {
-           GameWorld.setHighScore(GameWorld.getScore());
+
+        // Update high score
+        if (GameWorld.getScore() > GameWorld.getHighScore()) {
+            GameWorld.setHighScore(GameWorld.getScore());
         }
         
-        // Add Labels 
-        Label highScoreLabel = new Label(GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 50, 50);
+        // Score label
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 20);
         
+        // High score label
+        Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
+        addObject(highScoreLabel, 100, 50);
+        
+
+        // Display title label and the correct word
         titleLabel = new Label("YOU LOST", 60);
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
 
-        wordLabel = new Label("",30);
-        wordLabel(trueword);
+        wordLabel = new Label("", 30);
+        wordLabel(trueWord);
         addObject(wordLabel, getWidth() / 2, 300);
 
-        // Add button to return to titleScreen
+        // Back to menu button
         Button menuButton = new BackButton(this::backToMenu);
         addObject(menuButton, 550, 350);
-        
+
         fontColor();
         fireworks();
-        
+
         GameWorld.resetScore();
     }
 

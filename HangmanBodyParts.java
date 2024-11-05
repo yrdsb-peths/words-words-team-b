@@ -3,24 +3,24 @@ import java.util.List;
 
 public class HangmanBodyParts extends Hangman {
 
-    GifImage lineGif; 
+    GifImage lineGif;
     GreenfootImage linePic;
     GreenfootImage imageOne;
     boolean notImageOne;
-    boolean gifFinished = false; 
+    boolean gifFinished = false;
 
     public HangmanBodyParts(String bodyPart, boolean isLeft) {
 
-        gifFinished = false; 
+        gifFinished = false;
 
         lineGif = new GifImage("redLine.gif");
         List<GreenfootImage> images = lineGif.getImages(); // get list of images
         imageOne = images.get(0); // get reference to first image
 
         linePic = new GreenfootImage("images/redLine.png");
-        linePic.scale(150,150);
+        linePic.scale(150, 150);
 
-        if(bodyPart == "body") {
+        if (bodyPart == "body") {
             linePic.rotate(90);
 
             for (GreenfootImage img : images) {
@@ -31,7 +31,6 @@ public class HangmanBodyParts extends Hangman {
         } else if (isLeft) {
             linePic.mirrorVertically();
             linePic.rotate(135);
-            
 
             for (GreenfootImage img : images) {
                 img.scale(150, 150); // scale all images
@@ -47,7 +46,6 @@ public class HangmanBodyParts extends Hangman {
             }
         }
 
-    
         setImage(lineGif.getCurrentImage()); // set initial image
     }
 
@@ -57,7 +55,7 @@ public class HangmanBodyParts extends Hangman {
         } else {
             playOnce();
         }
-        
+
     }
 
     public void playOnce() {
@@ -65,11 +63,11 @@ public class HangmanBodyParts extends Hangman {
 
         if ((getImage() != imageOne) != notImageOne) // was there a change involving first image
         {
-            notImageOne = ! notImageOne; // record change
+            notImageOne = !notImageOne; // record change
             // if setting first image,
-            if (! notImageOne) {
+            if (!notImageOne) {
                 gifFinished = true;
-            } 
+            }
         }
     }
 }
