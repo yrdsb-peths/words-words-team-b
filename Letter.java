@@ -28,8 +28,7 @@ public class Letter extends Actor {
     }
 
     public void guess() {
-        if (!guessed)
-            crossLetter();
+        if (!guessed) crossLetter();
 
         guessed = true;
     }

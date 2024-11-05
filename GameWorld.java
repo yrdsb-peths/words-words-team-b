@@ -101,21 +101,21 @@ public class GameWorld extends World {
             // Update the word label
             updateWordLabel(currentWord);
             
-            if(letterInWord)
-            {
-                // Checks if user got the word right
-                checkWin();
-                
+            if (!alphabetMap.get(letter.charAt(0)).isGuessed()) {
                 //plays the sound effect for when a guess is made
                 guessSound.play();
-    
-            }
-            else if(!alphabetMap.get(letter.charAt(0)).isGuessed())  
-            {
-                incorrect++;
-                createHangman();
+                
+                if (letterInWord) {            
+                // Checks if user got the word right
+                checkWin();
+
+                } else {
+                    incorrect++;
+                    createHangman();
+                }
             }
             
+            //set the letter status as guessed
             alphabetMap.get(letter.charAt(0)).guess();
         }
     }
@@ -143,11 +143,11 @@ public class GameWorld extends World {
         } else if (incorrect == 6) {
             HangmanBodyParts rightLeg = new HangmanBodyParts("arm", false);
             addObject(rightLeg, 580, 450);
-        } else if (incorrect == 7){
+        } else if (incorrect == 7) {
             addObject(face, 498, 309);
             Greenfoot.delay(5);
           
-           // Create game end screen
+            // Create game end screen
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
 
             Greenfoot.setWorld(newScreen);
