@@ -3,8 +3,6 @@ import greenfoot.*;
 public class EndScreen extends World {
     private Label titleLabel;
     private Label wordLabel;
-
-    private char[] trueword; 
     
     GreenfootSound guessSound = new GreenfootSound("sounds/lossSound.mp3");
 
@@ -12,6 +10,7 @@ public class EndScreen extends World {
 
     {
         super(600, 400, 1);
+        setBackground("images/black-background.jpg");
 
         // Update high score
         if (GameWorld.getScore() > GameWorld.getHighScore()) {
@@ -32,7 +31,7 @@ public class EndScreen extends World {
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
 
         wordLabel = new Label("",30);
-        wordLabel(trueword);
+        wordLabel(word);
         addObject(wordLabel, getWidth() / 2, 300);
 
         Button menuButton = new BackButton(this::backToMenu);
