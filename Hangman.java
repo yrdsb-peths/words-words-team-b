@@ -7,13 +7,15 @@ import java.util.List;
 public class Hangman extends Actor {
     
     GifImage gif;
-    GreenfootImage pic;
+    GreenfootImage finalImage;
     GreenfootImage imageOne;
 
     boolean notImageOne;
     boolean gifFinished = false;
     
     List<GreenfootImage> images;
+    
+    boolean flagged = false;
     
     public Hangman(String gifFile, String imageFile)
     {
@@ -25,13 +27,13 @@ public class Hangman extends Actor {
         imageOne = images.get(0); // get reference to first image
         
         // Image
-        pic = new GreenfootImage(imageFile);
-        pic.scale(150, 150);
+        finalImage = new GreenfootImage(imageFile);
+        finalImage.scale(153, 153);
         
     }
     
     //play the gif
-    public void playOnce() {
+    public void updateImage() {
         setImage(gif.getCurrentImage());
 
         if ((getImage() != imageOne) != notImageOne) // was there a change involving first image
@@ -44,11 +46,13 @@ public class Hangman extends Actor {
         }
     }
     
+    //animate the image
     public void act() {
-        if (gifFinished) {
-            setImage(pic);
-        } else {
-            playOnce();
+        if (!gifFinished) {
+            updateImage();
+        } else if (!flagged){
+            flagged = true;
+            setImage(finalImage);
         }
 
     }

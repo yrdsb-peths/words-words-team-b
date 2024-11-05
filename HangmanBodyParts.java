@@ -12,7 +12,7 @@ public class HangmanBodyParts extends Hangman {
 
         // Checks which part of body
         if (bodyPart == "body") {
-            pic.rotate(90);
+            finalImage.rotate(90);
 
             for (GreenfootImage img : images) {
                 img.scale(150, 150); // scale all images
@@ -20,8 +20,8 @@ public class HangmanBodyParts extends Hangman {
             }
 
         } else if (isLeft) {
-            pic.mirrorVertically();
-            pic.rotate(135);
+            finalImage.mirrorVertically();
+            finalImage.rotate(135);
 
             for (GreenfootImage img : images) {
                 img.scale(150, 150); // scale all images
@@ -29,7 +29,7 @@ public class HangmanBodyParts extends Hangman {
                 img.rotate(135);
             }
         } else {
-            pic.rotate(45);
+            finalImage.rotate(45);
 
             for (GreenfootImage img : images) {
                 img.scale(150, 150); // scale all images
