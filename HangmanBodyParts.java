@@ -1,14 +1,11 @@
 import greenfoot.*;
-import java.util.List;
 
 public class HangmanBodyParts extends Hangman {
-
     /*
      * Constructor
      */
     public HangmanBodyParts(String bodyPart, boolean isLeft) {
         super("redLine.gif", "images/redLine.png");
-
 
         // Checks which part of body
         if (bodyPart == "body") {
