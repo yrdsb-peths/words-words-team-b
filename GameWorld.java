@@ -3,7 +3,7 @@ import java.util.*;
 
 public class GameWorld extends World {
     private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-    HashMap<Character, Letter> alphabetMap = new HashMap<Character, Letter>();
+    private HashMap<Character, Letter> alphabetMap = new HashMap<Character, Letter>();
 
     private char[] trueWord;
     private char[] currentWord;

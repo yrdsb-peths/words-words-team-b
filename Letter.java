@@ -20,7 +20,7 @@ public class Letter extends Actor {
 
         setImage((GreenfootImage) null);
 
-        letterLabel = new Label(Character.toString(letter), size);
+        letterLabel = new Label(Character.toString(letter), size);        
     }
 
     public void addedToWorld(World world) {
@@ -41,6 +41,8 @@ public class Letter extends Actor {
      */
     public void crossLetter() {
         Label crossLabel = new Label("/", size);
+        // Set the cross to be red
+        crossLabel.setFillColor(new Color(180, 20, 20));
         getWorld().addObject(crossLabel, xPos, yPos);
     }
 

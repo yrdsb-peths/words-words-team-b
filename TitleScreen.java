@@ -2,8 +2,8 @@ import greenfoot.*;
 
 public class TitleScreen extends World {
 
-    Button musicButton;
-    Face face;
+    private Button musicButton;
+    private Face face;
 
     public TitleScreen() {
         super(600, 400, 1);

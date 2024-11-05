@@ -1,14 +1,13 @@
 import greenfoot.*;
 import java.util.List;
 
-public class HangmanHead extends Hangman {
+public class HangmanHead extends Actor {
 
-    GifImage headGif;
-    GreenfootImage headPic;
-    GreenfootImage imageOne;
-
-    boolean notImageOne;
-    boolean gifFinished = false;
+    private GifImage headGif;
+    private GreenfootImage headPic;
+    private GreenfootImage imageOne;
+    private boolean notImageOne;
+    private boolean gifFinished = false;
 
     /*
      * Constructor

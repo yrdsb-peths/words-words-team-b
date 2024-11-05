@@ -1,10 +1,10 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Fireworks extends Actor {
-    GreenfootImage[] firework = new GreenfootImage[9];
-    SimpleTimer animationTimer = new SimpleTimer();
+    private GreenfootImage[] firework = new GreenfootImage[9];
+    private SimpleTimer animationTimer = new SimpleTimer();
 
-    int imageIndex = 0;
+    private int imageIndex = 0;
 
     public Fireworks() {
         // Load images

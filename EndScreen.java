@@ -1,14 +1,8 @@
 import greenfoot.*;
 
 public class EndScreen extends World {
-    
-    // Labels
-    Label titleLabel;
-    Label wordLabel;
-
-    // Actors
-    Face face;
-    Button musicButton;
+    private Label titleLabel;
+    private Label wordLabel;
 
     private char[] trueword; 
     
@@ -18,11 +12,16 @@ public class EndScreen extends World {
 
     {
         super(600, 400, 1);
-        setBackground("images/black-background.jpg");
-        this.face = face;
-        this.musicButton = musicButton;
-        trueword = word;
-                
+
+        // Update high score
+        if (GameWorld.getScore() > GameWorld.getHighScore()) {
+            GameWorld.setHighScore(GameWorld.getScore());
+        }
+        
+        // Score label
+        Label score = new Label("Score: " + GameWorld.getScore(), 40);
+        addObject(score, 70, 20);
+
         // High score label
         Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
         addObject(highScoreLabel, 100, 50);  
