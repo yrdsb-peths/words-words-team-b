@@ -11,17 +11,23 @@ public class GameWorld extends World {
 
     private Label wordLabel;
     private Label categoryLabel;
-
-    private int incorrect = 0; 
-    private int incorrectLetterX = 350;
-    Face face;
-    Button musicButton;
     
+    private GreenfootSound guessSound = new GreenfootSound("sounds/guessSound.mp3");
+    
+    private Face face;
+    private Button musicButton;
+
+    private int timer = Integer.MAX_VALUE;
+    private int displayTime = 30;
+
     private static int score = 0;
     private static int highScore = 0;
-    
-    GreenfootSound guessSound = new GreenfootSound("sounds/guessSound.mp3");
-   
+
+    private int incorrect = 0;
+
+    /*
+     * Constructor 
+     */
     public GameWorld(Face face, Button musicButton) {
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
@@ -31,6 +37,7 @@ public class GameWorld extends World {
         this.musicButton = musicButton;
         addObject(musicButton, 950, 555);
 
+        // Add gallow
         Gallow gallow = new Gallow();
         addObject(gallow, 570, 430);
         
@@ -41,7 +48,8 @@ public class GameWorld extends World {
         trueWord = randomWord[0].toCharArray();
         category = randomWord[1];
 
-        // Fill the current word with underscores, check if space or dash, if so, display it
+        // Fill the current word with underscores, check if space or dash, if so,
+        // Display it
         currentWord = new char[trueWord.length];
         for (int i = 0; i < currentWord.length; i++) {
             if (trueWord[i] == ' ' || trueWord[i] == '-') {
@@ -65,12 +73,15 @@ public class GameWorld extends World {
         addObject(categoryLabel, getWidth() / 2, 50);
 
         alphabetMap = createMap(ALPHABET);
-        
-        //clear any previous keys input
+
+        // Clear any previous keys input
         Greenfoot.getKey();
     }
 
     public void act() {
+        // Displays a countdown timer
+        countdownTimer();
+        
         // Get keypresses and interpret it
         handleUserInput(Greenfoot.getKey());
     }
@@ -149,15 +160,13 @@ public class GameWorld extends World {
           
             // Create game end screen
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
-
             Greenfoot.setWorld(newScreen);
-          
         }
       
     }
-    //map the alphabet 
-    private HashMap<Character, Letter> createMap(String word)
-    {
+
+    // Maps the alphabet
+    private HashMap<Character, Letter> createMap(String word) {
         HashMap<Character, Letter> alphabet = new HashMap<Character, Letter>();
         
         char[] charArray = ALPHABET.toCharArray();
@@ -165,10 +174,9 @@ public class GameWorld extends World {
         int xPos = 100;
         int yPos = 200;
         int counter = 0;
-        
-        for(char letter : charArray)
-        {
-            //change the position latter
+
+        for (char letter : charArray) {
+            // Add the letter to the map
             Letter letterObj = new Letter(letter, xPos, yPos);
             alphabet.put((Character) letter, letterObj);
             
@@ -211,23 +219,49 @@ public class GameWorld extends World {
         }
     }
     
-    public static int getScore()
-    {
+    // Creates a countdown timer
+    private void countdownTimer() {
+        if (timer % 100 == 0)
+        {
+            displayTime--;
+        }
+        TimerLabel tl = new TimerLabel(displayTime, 40);
+        removeObjects(getObjects(TimerLabel.class));
+        addObject(tl, 970, 20);
+        timer--;
+        
+        if (displayTime == -1)
+        {
+            EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
+            Greenfoot.setWorld(newScreen);
+        }
+    }
+
+    /*
+     * Returns score
+     */
+    public static int getScore() {
         return score;
     }
-    
-    public static int getHighScore()
-    {
+
+    /*
+     * Returns high score
+     */
+    public static int getHighScore() {
         return highScore;
     }
-    
-    public static void resetScore()
-    {
+
+    /*
+     * Resets the score
+     */
+    public static void resetScore() {
         score = 0;
     }
-    
-    public static void setHighScore(int theHighScore)
-    {
+
+    /*
+     * Sets the high score
+     */
+    public static void setHighScore(int theHighScore) {
         highScore = theHighScore;
     }
 }

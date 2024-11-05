@@ -1,10 +1,12 @@
 import greenfoot.*;
 
-public class EndScreen extends World{
-    Label titleLabel; 
-
+public class EndScreen extends World {
+    
+    // Labels
+    Label titleLabel;
     Label wordLabel;
 
+    // Actors
     Face face;
     Button musicButton;
 
@@ -16,22 +18,16 @@ public class EndScreen extends World{
 
     {
         super(600, 400, 1);
+        setBackground("images/black-background.jpg");
         this.face = face;
         this.musicButton = musicButton;
         trueword = word;
-        
-        int highScore;
-        
-        if(GameWorld.getScore() > GameWorld.getHighScore())
-        {
-           GameWorld.setHighScore(GameWorld.getScore());
-        }
-        
-        Label highScoreLabel = new Label(GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 50, 50);
-        
-        setBackground("images/black-background.jpg");
-        
+                
+        // High score label
+        Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
+        addObject(highScoreLabel, 100, 50);  
+
+        // Display title label and the correct word
         titleLabel = new Label("YOU LOST", 60);
 
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
@@ -51,6 +47,9 @@ public class EndScreen extends World{
         guessSound.play();
     }
 
+    /*
+     * Return back to title screen
+     */
     public void backToMenu() {
         Greenfoot.setWorld(new TitleScreen());
     }
@@ -64,15 +63,19 @@ public class EndScreen extends World{
 
         wordLabel.setValue("Correct word: " + wordString);
     }
-    
-    private void fontColor()
-    {
+
+    /*
+     * Set title label colour
+     */
+    private void fontColor() {
         titleLabel.setFillColor(Color.WHITE);
         titleLabel.setLineColor(Color.WHITE);
     }
-    
-    private void fireworks()
-    {
+
+    /*
+     * Create fireworks 
+     */
+    private void fireworks() {
         Fireworks f1 = new Fireworks();
         Fireworks f2 = new Fireworks();
         addObject(f1, 100, 150);

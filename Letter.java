@@ -27,17 +27,26 @@ public class Letter extends Actor {
         world.addObject(letterLabel, xPos, yPos);
     }
 
+    /*
+     * Crosses the letter if not guessed
+     */
     public void guess() {
         if (!guessed) crossLetter();
 
         guessed = true;
     }
 
+    /*
+     * Create a cross for guessed word 
+     */
     public void crossLetter() {
         Label crossLabel = new Label("/", size);
         getWorld().addObject(crossLabel, xPos, yPos);
     }
 
+    /*
+     * Return if guessed
+     */
     public boolean isGuessed() {
         return guessed;
     }
