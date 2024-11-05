@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class TimerLabel extends Actor
+public class TimerLabel extends Label
 {
     private String value;
     private int fontSize;
@@ -23,9 +23,7 @@ public class TimerLabel extends Actor
      */
     public TimerLabel(String value, int fontSize)
     {
-        this.value = value;
-        this.fontSize = fontSize;
-        updateImage();
+        super(value, fontSize);
     }
 
     /**
