@@ -3,9 +3,11 @@ import greenfoot.*;
 public class Face extends Actor {
     GreenfootImage[] image = new GreenfootImage[4];
     Queue<GreenfootImage> queue = new Queue<>();
+    GreenfootImage currentImage;
+    
     int imageIndex = 0;
     int selectedImage;
-    GreenfootImage currentImage;
+    
 
     public Face(boolean isGame) {
         // Load images

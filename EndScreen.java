@@ -1,15 +1,18 @@
 import greenfoot.*;
 
 public class EndScreen extends World {
+    
+    // Labels
     Label titleLabel;
-
     Label wordLabel;
 
+    // Actors
     Face face;
     Button musicButton;
 
     public EndScreen(Face face, Button musicButton, char[] trueWord) {
         super(600, 400, 1);
+        setBackground("images/black-background.jpg");
         this.face = face;
         this.musicButton = musicButton;
 
@@ -24,9 +27,7 @@ public class EndScreen extends World {
         
         // High score label
         Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 100, 50);
-        
-        setBackground("images/black-background.jpg");
+        addObject(highScoreLabel, 100, 50);  
 
         // Display title label and the correct word
         titleLabel = new Label("YOU LOST", 60);
@@ -46,6 +47,9 @@ public class EndScreen extends World {
         GameWorld.resetScore();
     }
 
+    /*
+     * Return back to title screen
+     */
     public void backToMenu() {
         Greenfoot.setWorld(new TitleScreen());
     }
@@ -60,11 +64,17 @@ public class EndScreen extends World {
         wordLabel.setValue("Correct word: " + wordString);
     }
 
+    /*
+     * Set title label colour
+     */
     private void fontColor() {
         titleLabel.setFillColor(Color.WHITE);
         titleLabel.setLineColor(Color.WHITE);
     }
 
+    /*
+     * Create fireworks 
+     */
     private void fireworks() {
         Fireworks f1 = new Fireworks();
         Fireworks f2 = new Fireworks();

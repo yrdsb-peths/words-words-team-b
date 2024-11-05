@@ -6,18 +6,21 @@ public class HangmanHead extends Hangman {
     GifImage headGif;
     GreenfootImage headPic;
     GreenfootImage imageOne;
+
     boolean notImageOne;
     boolean gifFinished = false;
 
+    /*
+     * Constructor
+     */
     public HangmanHead() {
 
         gifFinished = false;
-
-        // head
-        headGif = new GifImage("head.gif");
+        
         headPic = new GreenfootImage("images/head.png");
         headPic.scale(150, 150);
 
+        headGif = new GifImage("head.gif");
         List<GreenfootImage> images = headGif.getImages(); // get list of images
         imageOne = images.get(0); // get reference to first image
 
@@ -43,7 +46,7 @@ public class HangmanHead extends Hangman {
         if ((getImage() != imageOne) != notImageOne) // was there a change involving first image
         {
             notImageOne = !notImageOne; // record change
-            // if setting first image,
+
             if (!notImageOne) {
                 gifFinished = true;
             }

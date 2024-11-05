@@ -11,8 +11,7 @@ public class GameWorld extends World {
 
     private Label wordLabel;
     private Label categoryLabel;
-
-    private int incorrect = 0;
+    
     private Face face;
     private Button musicButton;
 
@@ -22,6 +21,11 @@ public class GameWorld extends World {
     private static int score = 0;
     private static int highScore = 0;
 
+    private int incorrect = 0;
+
+    /*
+     * Constructor 
+     */
     public GameWorld(Face face, Button musicButton) {
         super(1000, 600, 1);
         setBackground("images/blueBackground.png");
@@ -35,6 +39,7 @@ public class GameWorld extends World {
         this.musicButton = musicButton;
         addObject(musicButton, 950, 555);
 
+        // Add gallow
         Gallow gallow = new Gallow();
         addObject(gallow, 570, 430);
 
@@ -47,7 +52,7 @@ public class GameWorld extends World {
         category = randomWord[1];
 
         // Fill the current word with underscores, check if space or dash, if so,
-        // display it
+        // Display it
         currentWord = new char[trueWord.length];
         for (int i = 0; i < currentWord.length; i++) {
             if (trueWord[i] == ' ' || trueWord[i] == '-') {
@@ -72,12 +77,12 @@ public class GameWorld extends World {
 
         alphabetMap = createMap(ALPHABET);
 
-        // clear any previous keys input
+        // Clear any previous keys input
         Greenfoot.getKey();
     }
 
     public void act() {
-        //displays a countdown timer
+        // Displays a countdown timer
         countdownTimer();
         
         // Get keypresses and interpret it
@@ -151,13 +156,12 @@ public class GameWorld extends World {
 
             // Create game end screen
             EndScreen newScreen = new EndScreen(face, musicButton, trueWord);
-
             Greenfoot.setWorld(newScreen);
         }
 
     }
 
-    // map the alphabet
+    // Maps the alphabet
     private HashMap<Character, Letter> createMap(String word) {
         HashMap<Character, Letter> alphabet = new HashMap<Character, Letter>();
 
@@ -168,7 +172,7 @@ public class GameWorld extends World {
         int counter = 0;
 
         for (char letter : charArray) {
-            // add the letter to the map
+            // Add the letter to the map
             Letter letterObj = new Letter(letter, xPos, yPos);
             alphabet.put((Character) letter, letterObj);
 
@@ -226,18 +230,30 @@ public class GameWorld extends World {
         }
     }
 
+    /*
+     * Returns score
+     */
     public static int getScore() {
         return score;
     }
 
+    /*
+     * Returns high score
+     */
     public static int getHighScore() {
         return highScore;
     }
 
+    /*
+     * Resets the score
+     */
     public static void resetScore() {
         score = 0;
     }
 
+    /*
+     * Sets the high score
+     */
     public static void setHighScore(int theHighScore) {
         highScore = theHighScore;
     }

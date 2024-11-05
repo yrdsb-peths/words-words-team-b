@@ -34,11 +34,17 @@ public class Letter extends Actor {
         guessed = true;
     }
 
+    /*
+     * Create a cross for guessed word 
+     */
     public void crossLetter() {
         Label crossLabel = new Label("/", size);
         getWorld().addObject(crossLabel, xPos, yPos);
     }
 
+    /*
+     * Return if guessed
+     */
     public boolean isGuessed() {
         return guessed;
     }
