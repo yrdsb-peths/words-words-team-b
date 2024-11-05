@@ -10,41 +10,41 @@ public class EndScreen extends World {
     Face face;
     Button musicButton;
 
-    public EndScreen(Face face, Button musicButton, char[] trueWord) {
+    private char[] trueword; 
+    
+    GreenfootSound guessSound = new GreenfootSound("sounds/lossSound.mp3");
+
+    public EndScreen(Face face, Button musicButton, char[] word) 
+
+    {
         super(600, 400, 1);
         setBackground("images/black-background.jpg");
         this.face = face;
         this.musicButton = musicButton;
-
-        // Update high score
-        if (GameWorld.getScore() > GameWorld.getHighScore()) {
-            GameWorld.setHighScore(GameWorld.getScore());
-        }
-        
-        // Score label
-        Label score = new Label("Score: " + GameWorld.getScore(), 40);
-        addObject(score, 70, 20);
-        
+        trueword = word;
+                
         // High score label
         Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
         addObject(highScoreLabel, 100, 50);  
 
         // Display title label and the correct word
         titleLabel = new Label("YOU LOST", 60);
+
         addObject(titleLabel, getWidth() / 2, getHeight() / 2);
 
-        wordLabel = new Label("", 30);
-        wordLabel(trueWord);
+        wordLabel = new Label("",30);
+        wordLabel(trueword);
         addObject(wordLabel, getWidth() / 2, 300);
 
-        // Back to menu button
         Button menuButton = new BackButton(this::backToMenu);
         addObject(menuButton, 550, 350);
-
+        
         fontColor();
         fireworks();
-
+        
         GameWorld.resetScore();
+        
+        guessSound.play();
     }
 
     /*
