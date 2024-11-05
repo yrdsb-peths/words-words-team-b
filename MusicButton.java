@@ -12,10 +12,12 @@ public class MusicButton extends Button {
      * Constructor
      */
     public MusicButton(Runnable action) {
-        super(action);
-        setImage(musicOn);
-        music.play();
-        music.playLoop();
+        super(action); // calls super class constructor 
+        setImage(musicOn); // sets image
+
+        // Plays and loop music
+        music.play(); 
+        music.playLoop(); 
     }
 
     /*

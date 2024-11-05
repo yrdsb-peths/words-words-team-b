@@ -13,18 +13,22 @@ public class NextRoundScreen extends World {
         this.musicButton = musicButton;
         setBackground("images/BlackBackground.png");
 
+        // Score label
         Label score = new Label("Score: " + GameWorld.getScore(), 40);
         addObject(score, 70, 40);
 
+        // Gif
         GoodJobGif goodJob = new GoodJobGif();
         addObject(goodJob, 300, 200);
 
+        // Creates next round button
         CreateNextRoundButton();
     }
 
     public void act() {
-        userInput = Greenfoot.getKey();
+        userInput = Greenfoot.getKey(); // gets user pressed key
 
+        // Return to game world if user pressed space or enter
         if (userInput != null) {
             if (userInput.equals("space") || userInput.equals("enter")) {
                 nextRound();
@@ -32,12 +36,18 @@ public class NextRoundScreen extends World {
         }
     }
 
+    /*
+     * Creates a button for next round
+     */
     public void CreateNextRoundButton() {
-        // Add buttons
+        // Add button
         Button nextRoundButton = new NextRoundButton(this::nextRound);
         addObject(nextRoundButton, 300, 340);
     }
 
+    /*
+     * Returns to game world 
+     */
     public void nextRound() {
         Greenfoot.setWorld(new GameWorld(face, musicButton));
     }

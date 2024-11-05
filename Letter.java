@@ -27,6 +27,9 @@ public class Letter extends Actor {
         world.addObject(letterLabel, xPos, yPos);
     }
 
+    /*
+     * Crosses the letter if not guessed
+     */
     public void guess() {
         if (!guessed)
             crossLetter();
