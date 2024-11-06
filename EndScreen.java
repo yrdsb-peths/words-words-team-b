@@ -23,7 +23,7 @@ public class EndScreen extends World {
 
         // High score label
         Label highScoreLabel = new Label("Highscore: " + GameWorld.getHighScore(), 40);
-        addObject(highScoreLabel, 100, 50);  
+        addObject(highScoreLabel, 110, 50);  
 
         // Display title label and the correct word
         titleLabel = new Label("YOU LOST", 60);
