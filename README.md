@@ -15,3 +15,6 @@
 
 ### Queue
 - `Face.java` - To cycle between the avatars on the menu screen. A queue is used since it is cyclical
+
+### inheiritance 
+- 'Hangman.java' -> 'HangmanBodyPart.java' and 'HangmanFace' - To avoid repetition for codes, such as the 'updateImage' and 'act' method and initial variables. 
